@@ -1,235 +1,364 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Le Havre animal est un refuge situé à Trois-Rivières et qui a pour mission de soigner, protéger et assurer l'adoption responsable d'animaux."
+		/>
+		<title>Havre animal | Refuge animal à Trois-Rivières</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" href="favicon.png" />
+		<script src="js/index.js"></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Le Havre animal est un refuge situé à Trois-Rivières et qui a pour mission de soigner, protéger et assurer l'adoption responsable d'animaux.">
-    <title>Havre animal | Refuge animal à Trois-Rivières</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
-</head>
+	<body>
+		<header class="navbar">
+			<div class="container">
+				<img
+					class="navbar__logo"
+					src="images/refuge_havre_animal_logo.svg"
+					alt="Refuge Le Havre animal"
+				/>
+				<nav>
+					<ul class="navbar__list">
+						<li class="navbar__item"><a href="#mission">Notre mission</a></li>
+						<li class="navbar__item">
+							<a href="#statistiques">Statistiques</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#nos-pensionnaires">Nos pensionnaires</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#prendre-rendez-vous">Prendre rendez-vous</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-<body>
+		<main>
+			<section class="row-carousel">
+				<div class="container">
+					<h1 class="row-carousel__heading--hidden">Refuge Havre animal</h1>
+					<div class="row-carousel__image">
+						<img src="images/chat_endormi.jpg" alt="Chat qui dort" />
+					</div>
+				</div>
+			</section>
 
-    <header>
-        <div class="navbar container">
-            <img class="navbar__logo" src="" alt="Refuge Le Havre animal">
-            <nav>
-                <ul class="navbar__list">
-                    <li class="navbar__item"><a href="#mission">Notre mission</a></li>
-                    <li class="navbar__item"><a href="#statistiques">Statistiques</a></li>
-                    <li class="navbar__item"><a href="#nos-pensionnaires">Nos pensionnaires</a></li>
-                    <li class="navbar__item"><a href="#prendre-rendez-vous">Prendre rendez-vous</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+			<section class="row-newsletter">
+				<div class="container">
+					<form id="form-newsletter" class="row-newsletter__form" action="">
+						<p class="form-newsletter__text">
+							Pour rester à l'affût de nos dernières nouvelles, abonnez-vous à
+							notre infolettre!
+						</p>
+						<div class="form-newsletter__fields">
+							<div class="form-newsletter__field-wrapper">
+								<label for="courriel">Courriel:</label>
+								<input
+									type="email"
+									id="courriel"
+									name="courriel"
+									placeholder="Courriel"
+								/>
+							</div>
+							<input
+								class="form-newsletter__button"
+								type="submit"
+								value="M'inscrire"
+							/>
+						</div>
+					</form>
+				</div>
+			</section>
 
-    <main>
-        <section class="row-carousel">
-            <div class="container">
-                <h1 class="row-carousel__heading row-carousel__heading--hidden">Refuge Havre animal</h1>
-                <img class="row-carousel__image" src="" alt="Chat qui dort">
-            </div>
-        </section>
+			<section class="row-cta">
+				<div class="container">
+					<p class="row-cta__text">Voyez nos derniers pensionnaires</p>
+					<a class="row-cta__button" href="#">Consulter les fiches</a>
+				</div>
+			</section>
 
-        <section class="row-newsletter">
-            <div class="container">
-                <form id="form-newsletter" class="row-newsletter__form" action="">
-                    <p>Pour rester à l'affût de nos dernières nouvelles, abonnez-vous à notre infolettre!</p>
-                    <label for="courriel">Courriel:</label>
-                    <input type="email" id="courriel" name="courriel">
-                    <input type="submit" value="M'inscrire">
-                </form>
-            </div>
-        </section>
+			<section class="row-mission" id="mission">
+				<div class="container">
+					<h2>Notre mission</h2>
+					<div class="row-mission__wrapper wrapper">
+						<div class="row-mission__item">
+							<img src="" alt="" class="row-mission__icon" />
+							<h3>Protéger</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Suscipit, culpa!
+							</p>
+						</div>
+						<div class="row-mission__item">
+							<img src="" alt="" class="row-mission__icon" />
+							<h3>Soigner</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Suscipit, culpa!
+							</p>
+						</div>
+						<div class="row-mission__item">
+							<img src="" alt="" class="row-mission__icon" />
+							<h3>Adopter</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Suscipit, culpa!
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <section class="row-cta">
-            <div class="container">
-                <p class="row-cta__text">Voyez nos derniers pensionnaires</p>
-                <a class="row-cta__button" href="#">Consulter les fiches</a>
-            </div>
-        </section>
+			<section class="row-gallery">
+				<div class="container">
+					<img src="" alt="" />
+					<img src="" alt="" />
+					<img src="" alt="" />
+					<img src="" alt="" />
+					<img src="" alt="" />
+					<img src="" alt="" />
+				</div>
+			</section>
 
-        <section class="row-mission" id="mission">
-            <div class="container">
-                <h2>Notre mission</h2>
-                <div class="row-mission__wrapper wrapper">
-                    <div class="row-mission__item">
-                        <img src="" alt="" class="row-mission__icon">
-                        <h3>Protéger</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, culpa!</p>
-                    </div>
-                    <div class="row-mission__item">
-                        <img src="" alt="" class="row-mission__icon">
-                        <h3>Soigner</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, culpa!</p>
-                    </div>
-                    <div class="row-mission__item">
-                        <img src="" alt="" class="row-mission__icon">
-                        <h3>Adopter</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, culpa!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+			<section class="row-statistics" id="statistiques">
+				<div class="container">
+					<div class="row-statistics__column">
+						<img class="row-statistics__image" src="" alt="" />
+					</div>
 
-        <section class="row-gallery">
-            <div class="container">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </section>
+					<div class="row-statistics__column">
+						<h2>Le Havre animal en chiffres</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+							assumenda.
+						</p>
+						<div class="row-statistics__wrapper wrapper">
+							<p class="row-statistics__number"></p>
+							<p></p>
+						</div>
+						<div class="row-statistics__wrapper wrapper">
+							<p class="row-statistics__number"></p>
+							<p></p>
+						</div>
+						<a href="#" class="row-statistics__button">Voir plus</a>
+					</div>
+				</div>
+			</section>
 
-        <section class="row-statistics" id="statistiques">
-            <div class="container">
+			<section class="row-cards" id="nos-pensionnaires">
+				<div class="container">
+					<h2>Nos derniers pensionnaires</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat,
+						ratione.
+					</p>
+				</div>
+				<div class="row-cards__wrapper wrapper">
+					<div class="row-cards__item">
+						<img class="row-cards__image" src="" alt="" />
+						<h3>Nom</h3>
+						<p>Age, race</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Perspiciatis, debitis?
+						</p>
+						<a href="#" class="row-cards__button">Voir la fiche</a>
+					</div>
 
-                <div class="row-statistics__column">
-                    <img class="row-statistics__image" src="" alt="">
-                </div>
+					<div class="row-cards__item">
+						<img class="row-cards__image" src="" alt="" />
+						<h3>Nom</h3>
+						<p>Age, race</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Perspiciatis, debitis?
+						</p>
+						<a href="#" class="row-cards__button">Voir la fiche</a>
+					</div>
 
-                <div class="row-statistics__column">
-                    <h2>Le Havre animal en chiffres</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, assumenda.</p>
-                    <div class="row-statistics__wrapper wrapper">
-                        <p class="row-statistics__number"></p>
-                        <p></p>
-                    </div>
-                    <div class="row-statistics__wrapper wrapper">
-                        <p class="row-statistics__number"></p>
-                        <p></p>
-                    </div>
-                    <a href="#" class="row-statistics__button">Voir plus</a>
-                </div>
-            </div>
-        </section>
+					<div class="row-cards__item">
+						<img class="row-cards__image" src="" alt="" />
+						<h3>Nom</h3>
+						<p>Age, race</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Perspiciatis, debitis?
+						</p>
+						<a href="#" class="row-cards__button">Voir la fiche</a>
+					</div>
+				</div>
+			</section>
 
-        <section class="row-cards" id="nos-pensionnaires">
-            <div class="container">
-                <h2>Nos derniers pensionnaires</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, ratione.</p>
-            </div>
-            <div class="row-cards__wrapper wrapper">
-                <div class="row-cards__item">
-                    <img class="row-cards__image" src="" alt="">
-                    <h3>Nom</h3>
-                    <p>Age, race</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, debitis?</p>
-                    <a href="#" class="row-cards__button">Voir la fiche</a>
-                </div>
+			<section class="row-form" id="prendre-rendez-vous">
+				<div class="container">
+					<div class="row-form__box">
+						<h2>Prendre rendez-vous</h2>
+						<p>
+							Prenez rendez-vous pour rencontrer l'animal que vous voudriez
+							adopter.
+						</p>
+						<form action="" id="form-appointment">
+							<div class="row-form__input-wrapper">
+								<label
+									class="row-form__label row-form__label--hidden row-form__label--half"
+									for="txtNom"
+									>Nom de famille</label
+								>
+								<input
+									type="text"
+									id="txtNom"
+									name="txtNom"
+									placeholder="Nom de famille"
+									required
+								/>
 
-                <div class="row-cards__item">
-                    <img class="row-cards__image" src="" alt="">
-                    <h3>Nom</h3>
-                    <p>Age, race</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, debitis?</p>
-                    <a href="#" class="row-cards__button">Voir la fiche</a>
-                </div>
+								<label
+									class="row-form__label row-form__label--hidden row-form__label--half"
+									for="txtPrenom"
+									>Prénom</label
+								>
+								<input
+									type="text"
+									id="txtPrenom"
+									name="txtPrenom"
+									placeholder="Prénom"
+									required
+								/>
 
-                <div class="row-cards__item">
-                    <img class="row-cards__image" src="" alt="">
-                    <h3>Nom</h3>
-                    <p>Age, race</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, debitis?</p>
-                    <a href="#" class="row-cards__button">Voir la fiche</a>
-                </div>
-            </div>
-        </section>
+								<label
+									class="row-form__label row-form__label--hidden"
+									for="courriel"
+									>Courriel</label
+								>
+								<input
+									type="email"
+									id="courriel"
+									name="courriel"
+									placeholder="Courriel"
+									required
+								/>
 
-        <section class="row-form" id="prendre-rendez-vous">
-            <div class="container">
-                <div class="row-form__box">
-                    <h2>Prendre rendez-vous</h2>
-                    <p>Prenez rendez-vous pour rencontrer l'animal que vous voudriez adopter.</p>
-                    <form action="" id="form-appointment">
-                        <div class="row-form__input-wrapper">
+								<label
+									class="row-form__label row-form__label--hidden"
+									for="numTel"
+									>Numéro de téléphone</label
+								>
+								<input
+									type="tel"
+									id="numTel"
+									name="numTel"
+									placeholder="Numéro de téléphone"
+									required
+								/>
 
-                            <label class="row-form__label row-form__label--hidden row-form__label--half"
-                                for="txtNom">Nom de famille</label>
-                            <input type="text" id="txtNom" name="txtNom" placeholder="Nom de famille" required>
+								<label
+									class="row-form__label row-form__label--hidden row-form__label--half"
+									for="txtAnimal"
+									>Nom de l'animal</label
+								>
+								<input
+									type="text"
+									id="txtAnimal"
+									name="txtAnimal"
+									placeholder="Nom de l'animal"
+									required
+								/>
 
-                            <label class="row-form__label row-form__label--hidden row-form__label--half"
-                                for="txtPrenom">Prénom</label>
-                            <input type="text" id="txtPrenom" name="txtPrenom" placeholder="Prénom" required>
+								<label class="row-form__label" for="dateRdv">Date</label>
+								<input type="date" id="dateRdv" name="dateRdv" required />
 
-                            <label class="row-form__label row-form__label--hidden" for="courriel">Courriel</label>
-                            <input type="email" id="courriel" name="courriel" placeholder="Courriel" required>
+								<label for="selHeure">Heure du rendez-vous</label>
+								<select name="selHeure" id="selHeure" required>
+									<option value="">Sélectionner une heure</option>
+									<option value="9:00">9:00</option>
+									<option value="10:00">10:00</option>
+									<option value="13:00">13:00</option>
+									<option value="14:00">14:00</option>
+									<option value="15:00">15:00</option>
+									<option value="16:00">16:00</option>
+								</select>
 
-                            <label class="row-form__label row-form__label--hidden" for="numTel">Numéro de
-                                téléphone</label>
-                            <input type="tel" id="numTel" name="numTel" placeholder="Numéro de téléphone" required>
+								<label
+									class="row-form__label row-form__label--hidden"
+									for="txtAreaPrecisions"
+									>Précisions (facultatif)</label
+								>
+								<textarea
+									name="txtAreaPrecisions"
+									id="txtAreaPrecisions"
+									cols="30"
+									rows="10"
+									placeholder="Précisions (facultatif)"
+								></textarea>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
 
-                            <label class="row-form__label row-form__label--hidden row-form__label--half"
-                                for="txtAnimal">Nom de l'animal</label>
-                            <input type="text" id="txtAnimal" name="txtAnimal" placeholder="Nom de l'animal" required>
+		<footer class="row-footer">
+			<div class="container">
+				<img class="row-footer_logo" src="" alt="Refuge Le Havre Animal" />
 
-                            <label class="row-form__label" for="dateRdv">Date</label>
-                            <input type="date" id="dateRdv" name="dateRdv" required>
+				<nav class="row-footer__navbar">
+					<ul class="navbar__list">
+						<li class="navbar__item"><a href="#mission">Notre mission</a></li>
+						<li class="navbar__item">
+							<a href="#statistiques">Statistiques</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#nos-pensionnaires">Nos pensionnaires</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#prendre-rendez-vous">Prendre rendez-vous</a>
+						</li>
+					</ul>
+				</nav>
 
-                            <label for="selHeure">Heure du rendez-vous</label>
-                            <select name="selHeure" id="selHeure" required>
-                                <option value="">Sélectionner une heure</option>
-                                <option value="9:00">9:00</option>
-                                <option value="10:00">10:00</option>
-                                <option value="13:00">13:00</option>
-                                <option value="14:00">14:00</option>
-                                <option value="15:00">15:00</option>
-                                <option value="16:00">16:00</option>
-                            </select>
-
-                            <label class="row-form__label row-form__label--hidden" for="txtAreaPrecisions">Précisions
-                                (facultatif)</label>
-                            <textarea name="txtAreaPrecisions" id="txtAreaPrecisions" cols="30" rows="10"
-                                placeholder="Précisions (facultatif)"></textarea>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="row-footer">
-        <div class="container">
-
-            <img class="row-footer_logo" src="" alt="Refuge Le Havre Animal">
-
-            <nav class="row-footer__navbar">
-                <ul class="navbar__list">
-                    <li class="navbar__item"><a href="#mission">Notre mission</a></li>
-                    <li class="navbar__item"><a href="#statistiques">Statistiques</a></li>
-                    <li class="navbar__item"><a href="#nos-pensionnaires">Nos pensionnaires</a></li>
-                    <li class="navbar__item"><a href="#prendre-rendez-vous">Prendre rendez-vous</a></li>
-                </ul>
-            </nav>
-
-            <hr>
-            <p>Fait par: Anne Massicotte</p>
-            <div class="row-footer__wrapper wrapper">
-                <a href="#"><img class="row-footer__icon" src="" alt="Visitez notre page Facebook"></a>
-                <a href="#"><img class="row-footer__icon" src="" alt="Abonnez-vous à notre compte Twitter"></a>
-                <a href="#"><img class="row-footer__icon" src="" alt="Abonnez-vous à notre compte Instagram"></a>
-            </div>
-            <div class="row-footer__wrapper wrapper">
-                <div class="row-footer__wrapper--small-gap wrapper">
-                    <img class="row-footer__icon" src="" alt="Téléphonez-nous">
-                    <a href="tel:8191234567">(819)123-4567</a>
-                </div>
-                <div class="row-footer__wrapper--small-gap wrapper">
-                    <img class="row-footer__icon" src="" alt="Écrivez-nous par courriel">
-                    <a href="mailto:info@havreanimal.com">info@havreanimal.com</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-
+				<hr />
+				<p>Fait par: Anne Massicotte</p>
+				<div class="row-footer__wrapper wrapper">
+					<a href="#"
+						><img
+							class="row-footer__icon"
+							src=""
+							alt="Visitez notre page Facebook"
+					/></a>
+					<a href="#"
+						><img
+							class="row-footer__icon"
+							src=""
+							alt="Abonnez-vous à notre compte Twitter"
+					/></a>
+					<a href="#"
+						><img
+							class="row-footer__icon"
+							src=""
+							alt="Abonnez-vous à notre compte Instagram"
+					/></a>
+				</div>
+				<div class="row-footer__wrapper wrapper">
+					<div class="row-footer__wrapper--small-gap wrapper">
+						<img class="row-footer__icon" src="" alt="Téléphonez-nous" />
+						<a href="tel:8191234567">(819)123-4567</a>
+					</div>
+					<div class="row-footer__wrapper--small-gap wrapper">
+						<img
+							class="row-footer__icon"
+							src=""
+							alt="Écrivez-nous par courriel"
+						/>
+						<a href="mailto:info@havreanimal.com">info@havreanimal.com</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

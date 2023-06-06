@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:wght@500&family=Poppins&display=swap");
+
+/* Variables */
+
+$green: #a1d18a;
+$teal: #14aeb1;
+$navy: #20263b;
+$black: #141414;
+$white: #ffffff;
+
+$font-text: "Poppins", sans-serif;
+$font-heading: "Playfair", serif;
+
+$small-margin: 2rem;
+$medium-margin: 4rem;
+$large-margin: 6rem;
+
+$small-padding: 2rem;
+$medium-padding: 4rem;
+$large-padding: 6rem;
+
+$font-size-h1: 3rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.4rem;
+$font-size-p: 1rem;
+
+$shadow-img: 0px 0px 25px rgba(0, 0, 0, 0.5);
+$shadow-btn: 0px 0px 15px rgba(0, 0, 0, 0.3);
+
+/* Général */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+section {
+	padding: $large-margin 0;
+}
+
+p,
+a,
+label,
+input {
+	font-family: $font-text;
+	font-size: $font-size-p;
+}
+
+h1 {
+	font-size: $font-size-h1;
+	font-family: $font-heading;
+}
+
+h2 {
+	font-size: $font-size-h2;
+	font-family: $font-heading;
+}
+
+h3 {
+	font-size: $font-size-h3;
+	font-family: $font-heading;
+}
+
+img {
+	width: 100%;
+}
+
+/* Header */
+
+.navbar {
+	background-color: $teal;
+	padding: $small-padding 0;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+
+		.navbar__logo {
+			width: 250px;
+		}
+
+		nav {
+			.navbar__item {
+				display: inline-block;
+				margin-left: 2rem;
+
+				a {
+					display: inline-block;
+					text-decoration: none;
+					font-size: $font-size-p * 1.1;
+					color: $white;
+					transition: all 0.2s;
+
+					&:hover {
+						color: $navy;
+						transition: all 0.2s;
+					}
+				}
+			}
+		}
+	}
+}
+
+.row-carousel {
+	background-color: $white;
+	background-image: url(../images/fond-arches.png);
+
+	&__heading--hidden {
+		display: none;
+	}
+
+	&__image {
+		width: 70%;
+		margin: 0 auto;
+
+		img {
+			box-shadow: $shadow-img;
+		}
+	}
+}
+
+.row-newsletter {
+	background-color: $green;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+
+		.form-newsletter__text {
+			font-size: $font-size-h2;
+			font-family: $font-heading;
+		}
+
+		.form-newsletter__fields {
+			display: flex;
+			justify-content: center;
+			gap: 1.5rem;
+			width: 50%;
+			margin: 0 auto;
+
+			.form-newsletter__field-wrapper {
+				flex-basis: 70%;
+
+				label {
+					display: none;
+				}
+
+				#courriel {
+					width: 100%;
+					padding: $small-padding/4;
+					border: 2px solid $navy;
+
+					&:focus {
+						border: 2px solid $teal;
+					}
+				}
+			}
+
+			.form-newsletter__button {
+				flex-basis: 30%;
+				background-color: $teal;
+				color: $white;
+				border: none;
+				box-shadow: $shadow-btn;
+				transition: all 0.2s;
+
+				&:hover {
+					background-color: lighten($teal, 3%);
+					transition: all 0.2s;
+				}
+			}
+		}
+	}
+}

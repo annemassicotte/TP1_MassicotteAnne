@@ -1,1 +1,138 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair:wght@500&family=Poppins&display=swap");
+/* Variables */
+/* Général */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+p,
+a,
+label,
+input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Playfair", serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Playfair", serif;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-family: "Playfair", serif;
+}
+
+img {
+  width: 100%;
+}
+
+/* Header */
+.navbar {
+  background-color: #14aeb1;
+  padding: 2rem 0;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .container .navbar__logo {
+  width: 250px;
+}
+.navbar .container nav .navbar__item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.navbar .container nav .navbar__item a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+.navbar .container nav .navbar__item a:hover {
+  color: #20263b;
+  transition: all 0.2s;
+}
+
+.row-carousel {
+  background-color: #ffffff;
+  background-image: url(../images/fond-arches.png);
+}
+.row-carousel__heading--hidden {
+  display: none;
+}
+.row-carousel__image {
+  width: 70%;
+  margin: 0 auto;
+}
+.row-carousel__image img {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+}
+
+.row-newsletter {
+  background-color: #a1d18a;
+}
+.row-newsletter .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.row-newsletter .container .form-newsletter__text {
+  font-size: 2rem;
+  font-family: "Playfair", serif;
+}
+.row-newsletter .container .form-newsletter__fields {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+}
+.row-newsletter .container .form-newsletter__fields .form-newsletter__field-wrapper {
+  flex-basis: 70%;
+}
+.row-newsletter .container .form-newsletter__fields .form-newsletter__field-wrapper label {
+  display: none;
+}
+.row-newsletter .container .form-newsletter__fields .form-newsletter__field-wrapper #courriel {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #20263b;
+}
+.row-newsletter .container .form-newsletter__fields .form-newsletter__field-wrapper #courriel:focus {
+  border: 2px solid #14aeb1;
+}
+.row-newsletter .container .form-newsletter__fields .form-newsletter__button {
+  flex-basis: 30%;
+  background-color: #14aeb1;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+.row-newsletter .container .form-newsletter__fields .form-newsletter__button:hover {
+  background-color: #16bcbf;
+  transition: all 0.2s;
+}/*# sourceMappingURL=style.css.map */
