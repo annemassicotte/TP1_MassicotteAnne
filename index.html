@@ -53,7 +53,7 @@
 
 			<section class="row-newsletter">
 				<div class="container">
-					<form id="form-newsletter" class="row-newsletter__form" action="">
+					<form id="form-newsletter" action="">
 						<p class="row-newsletter__text">
 							Pour rester à l'affût de nos dernières nouvelles, abonnez-vous à
 							notre infolettre!
@@ -69,7 +69,7 @@
 								/>
 							</div>
 							<input
-								class="row-newsletter__button"
+								class="row-newsletter__submit"
 								type="submit"
 								value="M'inscrire"
 							/>
@@ -79,18 +79,24 @@
 			</section>
 
 			<section class="row-cta">
-				<div class="container">
+				<div class="row-cta__container">
 					<p class="row-cta__text">Voyez nos derniers pensionnaires</p>
-					<a class="row-cta__button" href="#">Consulter les fiches</a>
+					<a class="button button--navy" href="#">Consulter les fiches</a>
 				</div>
 			</section>
 
 			<section class="row-mission" id="mission">
 				<div class="container">
 					<h2>Notre mission</h2>
-					<div class="row-mission__wrapper wrapper">
+					<div class="row-mission__wrapper">
 						<div class="row-mission__item">
-							<img src="" alt="" class="row-mission__icon" />
+							<div class="row-mission__image">
+								<img
+									src="images/proteger.png"
+									alt="Protéger"
+									class="row-mission__icon"
+								/>
+							</div>
 							<h3>Protéger</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -98,7 +104,13 @@
 							</p>
 						</div>
 						<div class="row-mission__item">
-							<img src="" alt="" class="row-mission__icon" />
+							<div class="row-mission__image">
+								<img
+									src="images/soigner.png"
+									alt="Protéger"
+									class="row-mission__icon"
+								/>
+							</div>
 							<h3>Soigner</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -106,7 +118,14 @@
 							</p>
 						</div>
 						<div class="row-mission__item">
-							<img src="" alt="" class="row-mission__icon" />
+							<div class="row-mission__image">
+								<img
+									src="images/adopter.png"
+									alt="Adopter"
+									class="row-mission__icon"
+								/>
+							</div>
+
 							<h3>Adopter</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.

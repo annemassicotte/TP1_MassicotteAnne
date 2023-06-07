@@ -27,25 +27,48 @@ label,
 input {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  margin: 0;
 }
 
 h1 {
   font-size: 3rem;
   font-family: "Playfair", serif;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 2rem;
   font-family: "Playfair", serif;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "Playfair", serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 img {
   width: 100%;
+}
+
+.button {
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+}
+.button--navy {
+  background-color: #18195e;
+  color: #ffffff;
+}
+.button--navy:hover {
+  background-color: #222487;
+  transition: all 0.2s;
 }
 
 /* Header */
@@ -72,7 +95,7 @@ img {
   transition: all 0.2s;
 }
 .navbar__list-item a:hover {
-  color: #20263b;
+  color: #18195e;
   transition: all 0.2s;
 }
 
@@ -89,7 +112,7 @@ img {
   margin: 0 auto;
 }
 .row-carousel__image img {
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
 }
 
 .row-newsletter {
@@ -101,13 +124,14 @@ img {
   text-align: center;
 }
 .row-newsletter__text {
-  font-size: 2rem;
-  font-family: "Playfair", serif;
+  font-size: 1.6rem;
+  padding: 0 18rem;
+  margin-bottom: 2rem;
 }
 .row-newsletter__fields {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   width: 50%;
   margin: 0 auto;
 }
@@ -120,20 +144,47 @@ img {
 .row-newsletter__field-wrapper #courriel {
   width: 100%;
   padding: 0.5rem;
-  border: 2px solid #20263b;
+  border: 2px solid #18195e;
 }
 .row-newsletter__field-wrapper #courriel:focus {
   border: 2px solid #14aeb1;
 }
-.row-newsletter__button {
+.row-newsletter__submit {
   flex-basis: 30%;
+}
+
+.row-cta__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.row-cta__text {
+  font-size: 2rem;
+  font-family: "Playfair", serif;
+}
+
+.row-mission {
   background-color: #14aeb1;
   color: #ffffff;
-  border: none;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.2s;
 }
-.row-newsletter__button:hover {
-  background-color: #16bcbf;
-  transition: all 0.2s;
+.row-mission h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.row-mission__wrapper {
+  display: flex;
+  gap: 2rem;
+}
+.row-mission__item {
+  padding: 2rem;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+}
+.row-mission__image {
+  width: 80px;
+  margin: 0 auto 1rem auto;
 }/*# sourceMappingURL=style.css.map */
