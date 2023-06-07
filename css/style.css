@@ -57,30 +57,31 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.navbar .container .navbar__logo {
+.navbar__logo {
   width: 250px;
 }
-.navbar .container nav .navbar__item {
+.navbar__list-item {
   display: inline-block;
   margin-left: 2rem;
 }
-.navbar .container nav .navbar__item a {
+.navbar__list-item a {
   display: inline-block;
   text-decoration: none;
   font-size: 1.1rem;
   color: #ffffff;
   transition: all 0.2s;
 }
-.navbar .container nav .navbar__item a:hover {
+.navbar__list-item a:hover {
   color: #20263b;
   transition: all 0.2s;
 }
 
+/* Rangée Carrousel */
 .row-carousel {
   background-color: #ffffff;
   background-image: url(../images/fond-arches.png);
 }
-.row-carousel__heading--hidden {
+.row-carousel h1 {
   display: none;
 }
 .row-carousel__image {
@@ -99,32 +100,32 @@ img {
   justify-content: center;
   text-align: center;
 }
-.row-newsletter .container .form-newsletter__text {
+.row-newsletter__text {
   font-size: 2rem;
   font-family: "Playfair", serif;
 }
-.row-newsletter .container .form-newsletter__fields {
+.row-newsletter__fields {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   width: 50%;
   margin: 0 auto;
 }
-.row-newsletter .container .form-newsletter__fields .form-newsletter__field-wrapper {
+.row-newsletter__field-wrapper {
   flex-basis: 70%;
 }
-.row-newsletter .container .form-newsletter__fields .form-newsletter__field-wrapper label {
+.row-newsletter__field-wrapper label {
   display: none;
 }
-.row-newsletter .container .form-newsletter__fields .form-newsletter__field-wrapper #courriel {
+.row-newsletter__field-wrapper #courriel {
   width: 100%;
   padding: 0.5rem;
   border: 2px solid #20263b;
 }
-.row-newsletter .container .form-newsletter__fields .form-newsletter__field-wrapper #courriel:focus {
+.row-newsletter__field-wrapper #courriel:focus {
   border: 2px solid #14aeb1;
 }
-.row-newsletter .container .form-newsletter__fields .form-newsletter__button {
+.row-newsletter__button {
   flex-basis: 30%;
   background-color: #14aeb1;
   color: #ffffff;
@@ -132,7 +133,7 @@ img {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.2s;
 }
-.row-newsletter .container .form-newsletter__fields .form-newsletter__button:hover {
+.row-newsletter__button:hover {
   background-color: #16bcbf;
   transition: all 0.2s;
 }/*# sourceMappingURL=style.css.map */

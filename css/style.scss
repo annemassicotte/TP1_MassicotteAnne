@@ -44,7 +44,6 @@ body {
 	margin: 0 auto;
 }
 
-
 section {
 	padding: $large-margin 0;
 }
@@ -85,38 +84,38 @@ img {
 	.container {
 		display: flex;
 		justify-content: space-between;
+	}
 
-		.navbar__logo {
-			width: 250px;
-		}
+	&__logo {
+		width: 250px;
+	}
 
-		nav {
-			.navbar__item {
-				display: inline-block;
-				margin-left: 2rem;
+	&__list-item {
+		display: inline-block;
+		margin-left: 2rem;
 
-				a {
-					display: inline-block;
-					text-decoration: none;
-					font-size: $font-size-p * 1.1;
-					color: $white;
-					transition: all 0.2s;
+		a {
+			display: inline-block;
+			text-decoration: none;
+			font-size: $font-size-p * 1.1;
+			color: $white;
+			transition: all 0.2s;
 
-					&:hover {
-						color: $navy;
-						transition: all 0.2s;
-					}
-				}
+			&:hover {
+				color: $navy;
+				transition: all 0.2s;
 			}
 		}
 	}
 }
 
+/* Rangée Carrousel */
+
 .row-carousel {
 	background-color: $white;
 	background-image: url(../images/fond-arches.png);
 
-	&__heading--hidden {
+	h1 {
 		display: none;
 	}
 
@@ -137,50 +136,52 @@ img {
 		display: flex;
 		justify-content: center;
 		text-align: center;
+	}
 
-		.form-newsletter__text {
-			font-size: $font-size-h2;
-			font-family: $font-heading;
+	&__text {
+		font-size: $font-size-h2;
+		font-family: $font-heading;
+	}
+
+	&__fields {
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	&__field-wrapper {
+		flex-basis: 70%;
+
+		label {
+			display: none;
 		}
 
-		.form-newsletter__fields {
-			display: flex;
-			justify-content: center;
-			gap: 1.5rem;
-			width: 50%;
-			margin: 0 auto;
+		#courriel {
+			width: 100%;
+			padding: $small-padding/4;
+			border: 2px solid $navy;
 
-			.form-newsletter__field-wrapper {
-				flex-basis: 70%;
-
-				label {
-					display: none;
-				}
-
-				#courriel {
-					width: 100%;
-					padding: $small-padding/4;
-					border: 2px solid $navy;
-
-					&:focus {
-						border: 2px solid $teal;
-					}
-				}
-			}
-
-			.form-newsletter__button {
-				flex-basis: 30%;
-				background-color: $teal;
-				color: $white;
-				border: none;
-				box-shadow: $shadow-btn;
-				transition: all 0.2s;
-
-				&:hover {
-					background-color: lighten($teal, 3%);
-					transition: all 0.2s;
-				}
+			&:focus {
+				border: 2px solid $teal;
 			}
 		}
 	}
+
+	&__button {
+		flex-basis: 30%;
+		background-color: $teal;
+		color: $white;
+		border: none;
+		box-shadow: $shadow-btn;
+		transition: all 0.2s;
+
+		&:hover {
+			background-color: lighten($teal, 3%);
+			transition: all 0.2s;
+		}
+	}
 }
+
+
