@@ -1,6 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Playfair:wght@500&family=Poppins&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto+Condensed:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@400;500&display=swap');
 
 /* Variables */
 
@@ -25,7 +25,7 @@ $font-size-h3: 1.6rem;
 $font-size-p: 1rem;
 $font-size-p-smaller: 0.85rem;
 
-$shadow-img: 0px 0px 35px rgba(0, 0, 0, 0.25);
+$shadow-img: 0px 0px 15px rgba(0, 0, 0, 0.15);
 $shadow-btn: 0px 0px 15px rgba(0, 0, 0, 0.3);
 
 /* Général */
@@ -55,7 +55,7 @@ label,
 input {
 	font-family: $font-text;
 	font-size: $font-size-p;
-	margin: 0;
+	margin:0;
 }
 
 h1 {
@@ -89,6 +89,7 @@ img {
 	transition: all 0.2s;
 	padding: 0.8rem 1.5rem;
 	text-decoration: none;
+	font-weight:500;
 
 	&--navy {
 		background-color: $navy;
@@ -96,6 +97,17 @@ img {
 
 		&:hover {
 			background-color: lighten($navy, 10%);
+			transition: all 0.2s;
+		}
+	}
+
+	&--white{
+		background-color: $white;
+		color: $navy;
+
+		&:hover {
+			background-color: $navy;
+			color:$white;
 			transition: all 0.2s;
 		}
 	}
@@ -244,7 +256,6 @@ img {
 	&__item {
 		padding: $small-space;
 		border: 2px solid $white;
-		border-radius: 20px;
 		width: 100%;
 		text-align: center;
 		box-shadow: $shadow-img;
@@ -317,26 +328,27 @@ img {
 
 .row-statistics {
 
-	background-color:$green;
+	background-color: $green;
 
-	h2{
+	h2 {
 		margin-bottom: 0;
-		color:$navy;
+		color: $navy;
 	}
+
 	.container {
 		display: flex;
 		align-items: center;
-		gap:$medium-space;
+		gap: $medium-space;
 	}
 
-	&__image{
+	&__image {
 		box-shadow: $shadow-img;
 	}
 
-	&__column{
-		display:flex;
-		flex-direction:column;
-		align-items:flex-start;
+	&__column {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 		gap: $small-space;
 	}
 
@@ -348,10 +360,54 @@ img {
 	&__number {
 		font-size: $font-size-h1;
 		font-family: $font-heading;
-		color:$navy;
+		color: $navy;
 	}
 
-	&__caption{
-		font-size:$font-size-p-smaller;
+	&__caption {
+		font-size: $font-size-p-smaller;
+	}
+}
+
+.row-cards {
+
+	h2 {
+		text-align: center;
+	}
+
+	h3{
+		margin-bottom:0;
+		color:$white;
+	}
+
+	&__intro-text {
+		padding: 0 $large-space * 3;
+		text-align: center;
+		margin-bottom:$medium-space;
+	}
+
+	&__wrapper{
+		display:flex;
+		gap:$small-space;
+	}
+
+	&__item{
+		display:flex;
+		flex-direction:column;
+		gap:$small-space;
+		padding: $small-space;
+		background-color:$teal;
+		width: 100%;
+		box-shadow: $shadow-img;
+	}
+
+	&__image{
+		border: 3px solid $white;
+	}
+
+	&__animal-info{
+		display:flex;
+		align-items:flex-start;
+		flex-direction:column;
+		gap:$small-space/1.5;
 	}
 }

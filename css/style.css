@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* @import url("https://fonts.googleapis.com/css2?family=Playfair:wght@500&family=Poppins&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto+Condensed:wght@700&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@400;500&display=swap");
 /* Variables */
 /* Général */
 * {
@@ -63,6 +63,7 @@ img {
   transition: all 0.2s;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
+  font-weight: 500;
 }
 .button--navy {
   background-color: #18195e;
@@ -70,6 +71,15 @@ img {
 }
 .button--navy:hover {
   background-color: #222487;
+  transition: all 0.2s;
+}
+.button--white {
+  background-color: #ffffff;
+  color: #18195e;
+}
+.button--white:hover {
+  background-color: #18195e;
+  color: #ffffff;
   transition: all 0.2s;
 }
 
@@ -115,7 +125,7 @@ img {
   margin: 0 auto;
 }
 .row-carousel__image img {
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Rangée Infolettre */
@@ -189,10 +199,9 @@ img {
 .row-mission__item {
   padding: 2rem;
   border: 2px solid #ffffff;
-  border-radius: 20px;
   width: 100%;
   text-align: center;
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 .row-mission__image {
   width: 80px;
@@ -211,7 +220,7 @@ img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
 #img-2 {
@@ -220,7 +229,7 @@ img {
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
 #img-3 {
@@ -229,7 +238,7 @@ img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
 #img-4 {
@@ -238,7 +247,7 @@ img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
 #img-5 {
@@ -247,7 +256,7 @@ img {
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
 #img-6 {
@@ -256,7 +265,7 @@ img {
   aspect-ratio: 2/3;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Rangée Statistiques */
@@ -273,7 +282,7 @@ img {
   gap: 4rem;
 }
 .row-statistics__image {
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 .row-statistics__column {
   display: flex;
@@ -292,4 +301,39 @@ img {
 }
 .row-statistics__caption {
   font-size: 0.85rem;
+}
+
+.row-cards h2 {
+  text-align: center;
+}
+.row-cards h3 {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.row-cards__intro-text {
+  padding: 0 18rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.row-cards__wrapper {
+  display: flex;
+  gap: 2rem;
+}
+.row-cards__item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #14aeb1;
+  width: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+.row-cards__image {
+  border: 3px solid #ffffff;
+}
+.row-cards__animal-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.3333333333rem;
 }/*# sourceMappingURL=style.css.map */
