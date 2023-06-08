@@ -211,6 +211,7 @@ img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
 }
 
 #img-2 {
@@ -219,6 +220,7 @@ img {
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
 }
 
 #img-3 {
@@ -227,6 +229,7 @@ img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
 }
 
 #img-4 {
@@ -235,6 +238,7 @@ img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
 }
 
 #img-5 {
@@ -243,6 +247,7 @@ img {
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
 }
 
 #img-6 {
@@ -251,4 +256,40 @@ img {
   aspect-ratio: 2/3;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Rangée Statistiques */
+.row-statistics {
+  background-color: #a1d18a;
+}
+.row-statistics h2 {
+  margin-bottom: 0;
+  color: #18195e;
+}
+.row-statistics .container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.row-statistics__image {
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+}
+.row-statistics__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.row-statistics__results {
+  display: flex;
+  gap: 2rem;
+}
+.row-statistics__number {
+  font-size: 3rem;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  color: #18195e;
+}
+.row-statistics__caption {
+  font-size: 0.85rem;
 }/*# sourceMappingURL=style.css.map */

@@ -23,6 +23,7 @@ $font-size-h1: 3rem;
 $font-size-h2: 2rem;
 $font-size-h3: 1.6rem;
 $font-size-p: 1rem;
+$font-size-p-smaller: 0.85rem;
 
 $shadow-img: 0px 0px 35px rgba(0, 0, 0, 0.25);
 $shadow-btn: 0px 0px 15px rgba(0, 0, 0, 0.3);
@@ -229,9 +230,9 @@ img {
 		text-align: center;
 	}
 
-	&__text{
+	&__text {
 		padding: 0 $large-space * 3;
-		text-align:center;
+		text-align: center;
 		margin-bottom: $medium-space;
 	}
 
@@ -257,51 +258,100 @@ img {
 
 /* Rangée Grille photos */
 
-.row-gallery{
-	.container{
-		display:grid;
+.row-gallery {
+	.container {
+		display: grid;
 		grid-gap: $small-space/2;
 	}
 }
 
-#img-1{
+#img-1 {
 	grid-column: 1 / span 3;
 	grid-row: 5 / span 6;
 	aspect-ratio: 1 / 1;
-	object-fit:cover;
+	object-fit: cover;
+	box-shadow: $shadow-img;
 }
 
-#img-2{
+#img-2 {
 	grid-column: 4 / span 6;
 	grid-row: 1 / span 7;
 	aspect-ratio: 3 / 2;
-	object-fit:cover;
+	object-fit: cover;
+	box-shadow: $shadow-img;
 }
 
-#img-3{
+#img-3 {
 	grid-column: 4 / span 2;
-	grid-row:  8 / span 4;
+	grid-row: 8 / span 4;
 	aspect-ratio: 1 / 1;
-	object-fit:cover;
+	object-fit: cover;
+	box-shadow: $shadow-img;
 }
 
-#img-4{
+#img-4 {
 	grid-column: 10 / span 2;
 	grid-row: 4 / span 4;
 	aspect-ratio: 1 / 1;
-	object-fit:cover;
+	object-fit: cover;
+	box-shadow: $shadow-img;
 }
 
-#img-5{
+#img-5 {
 	grid-column: 6 / span 6;
 	grid-row: 8 / span 7;
 	aspect-ratio: 3 / 2;
-	object-fit:cover;
+	object-fit: cover;
+	box-shadow: $shadow-img;
 }
 
-#img-6{
+#img-6 {
 	grid-column: 12 / span 2;
 	grid-row: 6 / span 6;
 	aspect-ratio: 2 / 3;
-	object-fit:cover;
+	object-fit: cover;
+	box-shadow: $shadow-img;
+}
+
+/* Rangée Statistiques */
+
+.row-statistics {
+
+	background-color:$green;
+
+	h2{
+		margin-bottom: 0;
+		color:$navy;
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		gap:$medium-space;
+	}
+
+	&__image{
+		box-shadow: $shadow-img;
+	}
+
+	&__column{
+		display:flex;
+		flex-direction:column;
+		align-items:flex-start;
+		gap: $small-space;
+	}
+
+	&__results {
+		display: flex;
+		gap: $small-space;
+	}
+
+	&__number {
+		font-size: $font-size-h1;
+		font-family: $font-heading;
+		color:$navy;
+	}
+
+	&__caption{
+		font-size:$font-size-p-smaller;
+	}
 }
