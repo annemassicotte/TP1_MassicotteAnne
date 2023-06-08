@@ -1,5 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Playfair:wght@500&family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair:wght@500&family=Poppins&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto+Condensed:wght@700&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@300;400&display=swap");
 /* Variables */
 /* Général */
 * {
@@ -25,28 +27,28 @@ p,
 a,
 label,
 input {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   margin: 0;
 }
 
 h1 {
   font-size: 3rem;
-  font-family: "Playfair", serif;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
   margin-top: 0;
   margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 2rem;
-  font-family: "Playfair", serif;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
   margin-top: 0;
   margin-bottom: 2rem;
 }
 
 h3 {
   font-size: 1.6rem;
-  font-family: "Playfair", serif;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -90,8 +92,9 @@ img {
 .navbar__list-item a {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #ffffff;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
   transition: all 0.2s;
 }
 .navbar__list-item a:hover {
@@ -115,6 +118,7 @@ img {
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
 }
 
+/* Rangée Infolettre */
 .row-newsletter {
   background-color: #a1d18a;
 }
@@ -153,6 +157,7 @@ img {
   flex-basis: 30%;
 }
 
+/* Rangée CTA */
 .row-cta__container {
   display: flex;
   justify-content: center;
@@ -161,7 +166,7 @@ img {
 }
 .row-cta__text {
   font-size: 2rem;
-  font-family: "Playfair", serif;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 
 .row-mission {
@@ -171,6 +176,11 @@ img {
 .row-mission h2 {
   font-size: 3rem;
   text-align: center;
+}
+.row-mission__text {
+  padding: 0 18rem;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 .row-mission__wrapper {
   display: flex;
@@ -187,4 +197,58 @@ img {
 .row-mission__image {
   width: 80px;
   margin: 0 auto 1rem auto;
+}
+
+/* Rangée Grille photos */
+.row-gallery .container {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+#img-1 {
+  grid-column: 1/span 3;
+  grid-row: 5/span 6;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#img-2 {
+  grid-column: 4/span 6;
+  grid-row: 1/span 7;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#img-3 {
+  grid-column: 4/span 2;
+  grid-row: 8/span 4;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#img-4 {
+  grid-column: 10/span 2;
+  grid-row: 4/span 4;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#img-5 {
+  grid-column: 6/span 6;
+  grid-row: 8/span 7;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#img-6 {
+  grid-column: 12/span 2;
+  grid-row: 6/span 6;
+  aspect-ratio: 2/3;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
