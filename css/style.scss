@@ -1,6 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Playfair:wght@500&family=Poppins&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto+Condensed:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@400;500&display=swap");
 
 /* Variables */
 
@@ -10,10 +10,8 @@ $navy: #18195e;
 $black: #141414;
 $white: #ffffff;
 
-$font-text: 'Raleway',
-sans-serif;
-$font-heading: 'Fira Sans Extra Condensed',
-sans-serif;
+$font-text: "Raleway", sans-serif;
+$font-heading: "Fira Sans Extra Condensed", sans-serif;
 
 $small-space: 2rem;
 $medium-space: 4rem;
@@ -55,7 +53,7 @@ label,
 input {
 	font-family: $font-text;
 	font-size: $font-size-p;
-	margin:0;
+	margin: 0;
 }
 
 h1 {
@@ -76,7 +74,7 @@ h3 {
 	font-size: $font-size-h3;
 	font-family: $font-heading;
 	margin-top: 0;
-	margin-bottom: $small-space/2;
+	margin-bottom: calc($small-space/2);
 }
 
 img {
@@ -89,7 +87,7 @@ img {
 	transition: all 0.2s;
 	padding: 0.8rem 1.5rem;
 	text-decoration: none;
-	font-weight:500;
+	font-weight: 500;
 
 	&--navy {
 		background-color: $navy;
@@ -101,16 +99,22 @@ img {
 		}
 	}
 
-	&--white{
+	&--white {
 		background-color: $white;
 		color: $navy;
 
 		&:hover {
 			background-color: $navy;
-			color:$white;
+			color: $white;
 			transition: all 0.2s;
 		}
 	}
+}
+
+button {
+	width: fit-content;
+	font-size: $font-size-p;
+	font-family: $font-text;
 }
 
 /* Header */
@@ -200,7 +204,7 @@ img {
 			display: none;
 		}
 
-		#courriel {
+		input {
 			width: 100%;
 			padding: $small-space/4;
 			border: 2px solid $navy;
@@ -210,12 +214,7 @@ img {
 			}
 		}
 	}
-
-	&__submit {
-		flex-basis: 30%;
-	}
 }
-
 
 /* Rangée CTA */
 
@@ -327,7 +326,6 @@ img {
 /* Rangée Statistiques */
 
 .row-statistics {
-
 	background-color: $green;
 
 	h2 {
@@ -369,45 +367,120 @@ img {
 }
 
 .row-cards {
-
 	h2 {
 		text-align: center;
 	}
 
-	h3{
-		margin-bottom:0;
-		color:$white;
+	h3 {
+		margin-bottom: 0;
+		color: $white;
 	}
 
 	&__intro-text {
 		padding: 0 $large-space * 3;
 		text-align: center;
-		margin-bottom:$medium-space;
+		margin-bottom: $medium-space;
 	}
 
-	&__wrapper{
-		display:flex;
-		gap:$small-space;
+	&__wrapper {
+		display: flex;
+		gap: $small-space;
 	}
 
-	&__item{
-		display:flex;
-		flex-direction:column;
-		gap:$small-space;
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: $small-space;
 		padding: $small-space;
-		background-color:$teal;
+		background-color: $teal;
 		width: 100%;
 		box-shadow: $shadow-img;
 	}
 
-	&__image{
+	&__image {
 		border: 3px solid $white;
 	}
 
-	&__animal-info{
-		display:flex;
-		align-items:flex-start;
-		flex-direction:column;
-		gap:$small-space/1.5;
+	&__animal-info {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: $small-space/1.5;
+	}
+}
+
+/* Rangée Formulaire */
+
+.row-form {
+	position: relative;
+
+	&__map-container {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	&__box {
+		position: relative;
+		z-index: 1;
+		background-color: $green;
+		width: 50%;
+		margin-left: 50%;
+		padding: $small-space;
+
+		p {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__fields-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: $small-space/2;
+	}
+
+	&__two-fields-wrapper {
+		display: flex;
+		gap: 1rem;
+
+		.row-form__input-label-wrapper {
+			width: 50%;
+		}
+	}
+
+	&__input-label-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.row-form__label {
+		font-size: $font-size-p-smaller;
+
+		span {
+			color: red;
+			font-size: $font-size-p * 1.2;
+		}
+	}
+
+	input,
+	textarea,
+	select {
+		width: 100%;
+		padding: $small-space/4;
+		border: 2px solid $navy;
+
+		&:focus {
+			border: 2px solid $teal;
+		}
+	}
+
+	select,
+	textarea {
+		font-family: $font-text;
+		font-size: $font-size-p;
 	}
 }
