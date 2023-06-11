@@ -8,7 +8,9 @@ $green: #a1d18a;
 $teal: #14aeb1;
 $navy: #18195e;
 $black: #141414;
-$white: #ffffff;
+$white: #ffffff;;
+$redValidationForm:rgb(162, 2, 2);
+$greenValidationForm:rgb(1, 78, 20);
 
 $font-text: "Raleway", sans-serif;
 $font-heading: "Fira Sans Extra Condensed", sans-serif;
@@ -115,6 +117,10 @@ button {
 	width: fit-content;
 	font-size: $font-size-p;
 	font-family: $font-text;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 /* Header */
@@ -192,7 +198,8 @@ button {
 	&__fields {
 		display: flex;
 		justify-content: center;
-		gap: 2rem;
+		align-items: baseline;
+		gap: 1rem;
 		width: 50%;
 		margin: 0 auto;
 	}
@@ -206,7 +213,7 @@ button {
 
 		input {
 			width: 100%;
-			padding: $small-space/4;
+			padding: 0.8rem 1rem;
 			border: 2px solid $navy;
 
 			&:focus {
@@ -214,6 +221,10 @@ button {
 			}
 		}
 	}
+
+	/* button{
+		margin-bottom:0.5rem;
+	} */
 }
 
 /* Rangée CTA */
@@ -461,7 +472,7 @@ button {
 		font-size: $font-size-p-smaller;
 
 		span {
-			color: red;
+			color: $redValidationForm;
 			font-size: $font-size-p * 1.2;
 		}
 	}
@@ -482,5 +493,29 @@ button {
 	textarea {
 		font-family: $font-text;
 		font-size: $font-size-p;
+	}
+}
+
+/* Validation JS Formulaires */
+
+.input-control {
+	&.success {
+		input, select {
+			border-color: $greenValidationForm;
+		}
+	}
+
+	&.error {
+		input, select {
+			border-color: $redValidationForm;
+		}
+	}
+
+	.errorMessage {
+		font-size: $font-size-p-smaller;
+		font-family: $font-text;
+		text-align: left;
+		margin-top: 0.25rem;
+		color:$redValidationForm;
 	}
 }

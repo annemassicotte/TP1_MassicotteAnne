@@ -11,7 +11,7 @@
 		<title>Havre animal | Refuge animal à Trois-Rivières</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="icon" href="favicon.png" />
-		<script src="js/index.js"></script>
+		<script src="js/validation.js"></script>
 	</head>
 
 	<body>
@@ -53,13 +53,18 @@
 
 			<section class="row-newsletter">
 				<div class="container">
-					<form id="form-newsletter" action="">
+					<form
+						id="form-newsletter"
+						action="confirmation.html"
+						onsubmit="return validateNewsletterForm()"
+						novalidate
+					>
 						<p class="row-newsletter__text">
 							Pour rester à l'affût de nos dernières nouvelles, abonnez-vous à
 							notre infolettre!
 						</p>
 						<div class="row-newsletter__fields">
-							<div class="row-newsletter__field-wrapper">
+							<div class="row-newsletter__field-wrapper input-control">
 								<label for="courriel">Courriel:</label>
 								<input
 									type="email"
@@ -67,6 +72,7 @@
 									name="courriel"
 									placeholder="Courriel"
 								/>
+								<div class="errorMessage"></div>
 							</div>
 							<button class="button button--navy" type="submit">
 								M'inscrire
@@ -286,17 +292,22 @@
 							Prenez rendez-vous pour rencontrer l'animal que vous voudriez
 							adopter.
 						</p>
-						<form action="" id="form-appointment">
+						<form
+							id="form-appointment"
+							onsubmit="return validateAppointmentForm()"
+							novalidate
+						>
 							<div class="row-form__fields-wrapper">
 								<div class="row-form__two-fields-wrapper">
-									<div class="row-form__input-label-wrapper">
+									<div class="row-form__input-label-wrapper input-control">
 										<label class="row-form__label" for="txtNom"
 											>Nom de famille <span>*</span></label
 										>
 										<input type="text" id="txtNom" name="txtNom" required />
+										<div class="errorMessage"></div>
 									</div>
 
-									<div class="row-form__input-label-wrapper">
+									<div class="row-form__input-label-wrapper input-control">
 										<label class="row-form__label" for="txtPrenom"
 											>Prénom <span>*</span></label
 										>
@@ -306,25 +317,28 @@
 											name="txtPrenom"
 											required
 										/>
+										<div class="errorMessage"></div>
 									</div>
 								</div>
 
-								<div class="row-form__input-label-wrapper">
-									<label class="row-form__label" for="courriel"
-										>Courriel <span>*</span></label
+								<div class="row-form__input-label-wrapper input-control">
+									<label class="row-form__label" for="email">
+										Courriel <span>*</span></label
 									>
-									<input type="email" id="courriel" name="courriel" required />
+									<input type="email" id="email" name="courriel" required />
+									<div class="errorMessage"></div>
 								</div>
 
 								<div class="row-form__two-fields-wrapper">
-									<div class="row-form__input-label-wrapper">
+									<div class="row-form__input-label-wrapper input-control">
 										<label class="row-form__label" for="numTel"
 											>Numéro de téléphone <span>*</span></label
 										>
 										<input type="tel" id="numTel" name="numTel" required />
+										<div class="errorMessage"></div>
 									</div>
 
-									<div class="row-form__input-label-wrapper">
+									<div class="row-form__input-label-wrapper input-control">
 										<label class="row-form__label" for="txtAnimal"
 											>Nom de l'animal <span>*</span></label
 										>
@@ -334,18 +348,20 @@
 											name="txtAnimal"
 											required
 										/>
+										<div class="errorMessage"></div>
 									</div>
 								</div>
 
 								<div class="row-form__two-fields-wrapper">
-									<div class="row-form__input-label-wrapper">
+									<div class="row-form__input-label-wrapper input-control">
 										<label class="row-form__label" for="dateRdv"
 											>Date <span>*</span></label
 										>
 										<input type="date" id="dateRdv" name="dateRdv" required />
+										<div class="errorMessage"></div>
 									</div>
 
-									<div class="row-form__input-label-wrapper">
+									<div class="row-form__input-label-wrapper input-control">
 										<label class="row-form__label" for="selHeure"
 											>Heure du rendez-vous <span>*</span></label
 										>
@@ -358,6 +374,7 @@
 											<option value="15:00">15:00</option>
 											<option value="16:00">16:00</option>
 										</select>
+										<div class="errorMessage"></div>
 									</div>
 								</div>
 

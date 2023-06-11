@@ -88,6 +88,9 @@ button {
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
 }
+button:hover {
+  cursor: pointer;
+}
 
 /* Header */
 .navbar {
@@ -137,6 +140,9 @@ button {
 /* Rangée Infolettre */
 .row-newsletter {
   background-color: #a1d18a;
+  /* button{
+  	margin-bottom:0.5rem;
+  } */
 }
 .row-newsletter .container {
   display: flex;
@@ -151,7 +157,8 @@ button {
 .row-newsletter__fields {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-items: baseline;
+  gap: 1rem;
   width: 50%;
   margin: 0 auto;
 }
@@ -163,7 +170,7 @@ button {
 }
 .row-newsletter__field-wrapper input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.8rem 1rem;
   border: 2px solid #18195e;
 }
 .row-newsletter__field-wrapper input:focus {
@@ -379,7 +386,7 @@ button {
   font-size: 0.85rem;
 }
 .row-form .row-form__label span {
-  color: red;
+  color: rgb(162, 2, 2);
   font-size: 1.2rem;
 }
 .row-form input,
@@ -398,4 +405,19 @@ button {
 .row-form textarea {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
+}
+
+/* Validation JS Formulaires */
+.input-control.success input, .input-control.success select {
+  border-color: rgb(1, 78, 20);
+}
+.input-control.error input, .input-control.error select {
+  border-color: rgb(162, 2, 2);
+}
+.input-control .errorMessage {
+  font-size: 0.85rem;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  margin-top: 0.25rem;
+  color: rgb(162, 2, 2);
 }/*# sourceMappingURL=style.css.map */
