@@ -401,6 +401,80 @@ button:hover {
   font-size: 1rem;
 }
 
+.row-footer {
+  background-color: #18195e;
+  padding-bottom: 3rem;
+}
+.row-footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.row-footer__logo {
+  width: 350px;
+  margin: 0 auto;
+}
+.row-footer__menu {
+  display: flex;
+  justify-content: center;
+}
+.row-footer__menu-item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.row-footer__menu-item a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  transition: all 0.2s;
+}
+.row-footer__menu-item a:hover {
+  color: #a1d18a;
+  transition: all 0.2s;
+}
+.row-footer hr {
+  width: 100%;
+}
+.row-footer p {
+  color: #ffffff;
+  flex-basis: 33.3333333333%;
+}
+.row-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.row-footer a:hover {
+  color: #a1d18a;
+}
+.row-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.row-footer__wrapper-socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-basis: 33.3333333333%;
+  justify-content: center;
+}
+.row-footer__wrapper-contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-basis: 33.3333333333%;
+  justify-content: flex-end;
+}
+.row-footer__wrapper-icon-link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.row-footer__icon {
+  width: 25px;
+}
+
 .input-control.success input, .input-control.success select {
   border-color: rgb(1, 78, 20);
 }
