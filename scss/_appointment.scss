@@ -1,0 +1,73 @@
+.row-form {
+	position: relative;
+
+	&__map-container {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	&__box {
+		position: relative;
+		z-index: 1;
+		background-color: $green;
+		width: 50%;
+		margin-left: 50%;
+		padding: $small-space;
+
+		p {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__fields-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: $small-space/2;
+	}
+
+	&__two-fields-wrapper {
+		display: flex;
+		gap: 1rem;
+
+		.row-form__input-label-wrapper {
+			width: 50%;
+		}
+	}
+
+	&__input-label-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.row-form__label {
+		font-size: $font-size-p-smaller;
+
+		span {
+			color: $redValidationForm;
+			font-size: $font-size-p * 1.2;
+		}
+	}
+
+	input,
+	textarea,
+	select {
+		width: 100%;
+		padding: $small-space/4;
+		border: 2px solid $navy;
+
+		&:focus {
+			border: 2px solid $teal;
+		}
+	}
+
+	select,
+	textarea {
+		font-family: $font-text;
+		font-size: $font-size-p;
+	}
+}

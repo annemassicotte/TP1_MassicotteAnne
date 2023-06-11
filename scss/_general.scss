@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@400;500&display=swap");
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+section {
+	padding: $large-space 0;
+}
+
+p,
+a,
+label,
+input {
+	font-family: $font-text;
+	font-size: $font-size-p;
+	margin: 0;
+}
+
+h1 {
+	font-size: $font-size-h1;
+	font-family: $font-heading;
+	margin-top: 0;
+	margin-bottom: $small-space;
+}
+
+h2 {
+	font-size: $font-size-h2;
+	font-family: $font-heading;
+	margin-top: 0;
+	margin-bottom: $small-space;
+}
+
+h3 {
+	font-size: $font-size-h3;
+	font-family: $font-heading;
+	margin-top: 0;
+	margin-bottom: calc($small-space/2);
+}
+
+img {
+	width: 100%;
+}
+
+/* Boutons */
+
+.button {
+	border: none;
+	box-shadow: $shadow-btn;
+	transition: all 0.2s;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	font-weight: 500;
+
+	&--navy {
+		background-color: $navy;
+		color: $white;
+
+		&:hover {
+			background-color: lighten($navy, 10%);
+			transition: all 0.2s;
+		}
+	}
+
+	&--white {
+		background-color: $white;
+		color: $navy;
+
+		&:hover {
+			background-color: $navy;
+			color: $white;
+			transition: all 0.2s;
+		}
+	}
+}
+
+button {
+	width: fit-content;
+	font-size: $font-size-p;
+	font-family: $font-text;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

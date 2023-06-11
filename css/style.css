@@ -1,9 +1,10 @@
 @charset "UTF-8";
-/* @import url("https://fonts.googleapis.com/css2?family=Playfair:wght@500&family=Poppins&display=swap"); */
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto+Condensed:wght@700&display=swap'); */
+/* Couleurs */
+/* Police */
+/* Tailles de police */
+/* Espacements */
+/* Ombres */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@400;500&display=swap");
-/* Variables */
-/* Général */
 * {
   box-sizing: border-box;
 }
@@ -57,6 +58,7 @@ img {
   width: 100%;
 }
 
+/* Boutons */
 .button {
   border: none;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
@@ -92,7 +94,6 @@ button:hover {
   cursor: pointer;
 }
 
-/* Header */
 .navbar {
   background-color: #14aeb1;
   padding: 2rem 0;
@@ -121,28 +122,23 @@ button:hover {
   transition: all 0.2s;
 }
 
-/* Rangée Carrousel */
-.row-carousel {
+.row-slider {
   background-color: #ffffff;
   background-image: url(../images/fond-arches.png);
 }
-.row-carousel h1 {
+.row-slider h1 {
   display: none;
 }
-.row-carousel__image {
+.row-slider__image {
   width: 70%;
   margin: 0 auto;
 }
-.row-carousel__image img {
+.row-slider__image img {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Rangée Infolettre */
 .row-newsletter {
   background-color: #a1d18a;
-  /* button{
-  	margin-bottom:0.5rem;
-  } */
 }
 .row-newsletter .container {
   display: flex;
@@ -177,7 +173,6 @@ button:hover {
   border: 2px solid #14aeb1;
 }
 
-/* Rangée CTA */
 .row-cta__container {
   display: flex;
   justify-content: center;
@@ -189,6 +184,7 @@ button:hover {
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 
+/* Cards - Éléments de mission */
 .row-mission {
   background-color: #14aeb1;
   color: #ffffff;
@@ -218,7 +214,42 @@ button:hover {
   margin: 0 auto 1rem auto;
 }
 
-/* Rangée Grille photos */
+/* Cards - Derniers pensionnaires */
+.row-cards h2 {
+  text-align: center;
+}
+.row-cards h3 {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.row-cards__intro-text {
+  padding: 0 18rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.row-cards__wrapper {
+  display: flex;
+  gap: 2rem;
+}
+.row-cards__item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #14aeb1;
+  width: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+.row-cards__image {
+  border: 3px solid #ffffff;
+}
+.row-cards__animal-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.3333333333rem;
+}
+
 .row-gallery .container {
   display: grid;
   grid-gap: 1rem;
@@ -272,7 +303,6 @@ button:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Rangée Statistiques */
 .row-statistics {
   background-color: #a1d18a;
 }
@@ -307,42 +337,6 @@ button:hover {
   font-size: 0.85rem;
 }
 
-.row-cards h2 {
-  text-align: center;
-}
-.row-cards h3 {
-  margin-bottom: 0;
-  color: #ffffff;
-}
-.row-cards__intro-text {
-  padding: 0 18rem;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.row-cards__wrapper {
-  display: flex;
-  gap: 2rem;
-}
-.row-cards__item {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  background-color: #14aeb1;
-  width: 100%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-}
-.row-cards__image {
-  border: 3px solid #ffffff;
-}
-.row-cards__animal-info {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 1.3333333333rem;
-}
-
-/* Rangée Formulaire */
 .row-form {
   position: relative;
 }
@@ -407,7 +401,6 @@ button:hover {
   font-size: 1rem;
 }
 
-/* Validation JS Formulaires */
 .input-control.success input, .input-control.success select {
   border-color: rgb(1, 78, 20);
 }

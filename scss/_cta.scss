@@ -1,0 +1,13 @@
+.row-cta {
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	&__text {
+		font-size: $font-size-h2;
+		font-family: $font-heading;
+	}
+}

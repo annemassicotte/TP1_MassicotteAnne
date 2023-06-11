@@ -1,0 +1,42 @@
+.row-newsletter {
+	background-color: $green;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+	&__text {
+		font-size: $font-size-h3;
+		padding: 0 $large-space * 3;
+		margin-bottom: $small-space;
+	}
+
+	&__fields {
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+		gap: 1rem;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	&__field-wrapper {
+		flex-basis: 70%;
+
+		label {
+			display: none;
+		}
+
+		input {
+			width: 100%;
+			padding: 0.8rem 1rem;
+			border: 2px solid $navy;
+
+			&:focus {
+				border: 2px solid $teal;
+			}
+		}
+	}
+}

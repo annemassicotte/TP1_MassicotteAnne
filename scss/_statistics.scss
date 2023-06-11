@@ -1,0 +1,40 @@
+.row-statistics {
+	background-color: $green;
+
+	h2 {
+		margin-bottom: 0;
+		color: $navy;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		gap: $medium-space;
+	}
+
+	&__image {
+		box-shadow: $shadow-img;
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: $small-space;
+	}
+
+	&__results {
+		display: flex;
+		gap: $small-space;
+	}
+
+	&__number {
+		font-size: $font-size-h1;
+		font-family: $font-heading;
+		color: $navy;
+	}
+
+	&__caption {
+		font-size: $font-size-p-smaller;
+	}
+}

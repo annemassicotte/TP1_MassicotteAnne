@@ -1,0 +1,17 @@
+.row-slider {
+	background-color: $white;
+	background-image: url(../images/fond-arches.png);
+
+	h1 {
+		display: none;
+	}
+
+	&__image {
+		width: 70%;
+		margin: 0 auto;
+
+		img {
+			box-shadow: $shadow-img;
+		}
+	}
+}

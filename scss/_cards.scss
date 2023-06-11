@@ -1,0 +1,80 @@
+/* Cards - Éléments de mission */
+
+.row-mission {
+	background-color: $teal;
+	color: $white;
+
+	h2 {
+		font-size: $font-size-h1;
+		text-align: center;
+	}
+
+	&__text {
+		padding: 0 $large-space * 3;
+		text-align: center;
+		margin-bottom: $medium-space;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 2rem;
+	}
+
+	&__item {
+		padding: $small-space;
+		border: 2px solid $white;
+		width: 100%;
+		text-align: center;
+		box-shadow: $shadow-img;
+	}
+
+	&__image {
+		width: 80px;
+		margin: 0 auto $small-space/2 auto;
+	}
+}
+
+/* Cards - Derniers pensionnaires */
+
+.row-cards {
+	h2 {
+		text-align: center;
+	}
+
+	h3 {
+		margin-bottom: 0;
+		color: $white;
+	}
+
+	&__intro-text {
+		padding: 0 $large-space * 3;
+		text-align: center;
+		margin-bottom: $medium-space;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: $small-space;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: $small-space;
+		padding: $small-space;
+		background-color: $teal;
+		width: 100%;
+		box-shadow: $shadow-img;
+	}
+
+	&__image {
+		border: 3px solid $white;
+	}
+
+	&__animal-info {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: $small-space/1.5;
+	}
+}
