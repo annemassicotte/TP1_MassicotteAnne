@@ -7,4 +7,10 @@
 		font-size: $font-size-h2;
 		font-family: $font-heading;
 	}
+
+	@media screen and (max-width:768px){
+		&__container {
+			@include flexProperties(column, null, center, null, $small-space);
+		}
+	}
 }

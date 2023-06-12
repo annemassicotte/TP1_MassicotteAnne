@@ -13,7 +13,7 @@
 	}
 
 	&__fields {
-		@include flexProperties(null, center, baseline, null, calc($small-space/2));
+		@include flexProperties(null, center, baseline, null, calc($small-space));
 		width: 50%;
 		margin: 0 auto;
 	}
