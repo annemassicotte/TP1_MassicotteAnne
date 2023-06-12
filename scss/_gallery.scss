@@ -1,13 +1,14 @@
 .row-gallery {
 	.container {
 		display: grid;
+		align-items:stretch;
 		grid-gap: calc($small-space/2);
 	}
 }
 
 #img-1 {
 	@include gridDisposition(
-		$column: 1 / span 3, 
+		$column: 1 / span 3,
 		$row: 5 / span 6,
 		$ratio: 1 / 1
 	);
@@ -51,4 +52,104 @@
 		$row: 6 / span 6,
 		$ratio: 2 / 3
 	);
+}
+
+@media (max-width: 1024px) {
+	#img-1 {
+		@include gridDisposition(
+			$column: 1 / span 4,
+			$row: 1 / span 3,
+			$ratio: 4 / 3
+		);
+	}
+
+	#img-2 {
+		@include gridDisposition(
+			$column: 1 / span 4,
+			$row: 4 / span 4,
+			$ratio: 1 / 1
+		);
+	}
+
+	#img-3 {
+		@include gridDisposition(
+			$column: 5 / span 3,
+			$row: 1 / span 3,
+			$ratio: 1 / 1
+		);
+	}
+
+	#img-4 {
+		@include gridDisposition(
+			$column: 5 / span 3,
+			$row: 4 / span 4,
+			$ratio: 3 / 4
+		);
+	}
+
+	#img-5 {
+		@include gridDisposition(
+			$column: 8 / span 3,
+			$row: 1 / span 4,
+			$ratio: 3 / 4
+		);
+	}
+
+	#img-6 {
+		@include gridDisposition(
+			$column: 8 / span 3,
+			$row: 5 / span 3,
+			$ratio: 1 / 1
+		);
+	}
+}
+
+@media (max-width: 768px) {
+	#img-1 {
+		@include gridDisposition(
+			$column: 1 / span 1,
+			$row: 1 / span 1,
+			$ratio: 1 / 1
+		);
+	}
+
+	#img-2 {
+		@include gridDisposition(
+			$column: 2 / span 1,
+			$row: 1 / span 1,
+			$ratio: 1 / 1
+		);
+	}
+
+	#img-3 {
+		@include gridDisposition(
+			$column: 1 / span 2,
+			$row: 2 / span 1,
+			$ratio: 3 / 2
+		);
+	}
+
+	#img-4 {
+		@include gridDisposition(
+			$column: 1 / span 1,
+			$row: 3 / span 1,
+			$ratio: 1 / 1
+		);
+	}
+
+	#img-5 {
+		@include gridDisposition(
+			$column: 2 / span 1,
+			$row: 3 / span 1,
+			$ratio: 1 / 1
+		);
+	}
+
+	#img-6 {
+		@include gridDisposition(
+			$column: 1 / span 2,
+			$row: 4 / span 1,
+			$ratio: 3 / 2
+		);
+	}
 }
