@@ -57,6 +57,12 @@
 		color: $white;
 	}
 
+	a {
+		&:focus{
+			@include focus($color: $green);
+		}
+	}
+
 	&__intro-text {
 		@extend %text;
 	}
@@ -85,6 +91,10 @@
 			null,
 			calc($small-space/1.5)
 		);
+
+		p {
+			color:$white;
+		}
 	}
 }
 
@@ -134,7 +144,6 @@
 
 @media screen and (max-width: 768px) {
 	.row-mission {
-
 		h2 {
 			font-size: $font-size-h1-mobile;
 		}

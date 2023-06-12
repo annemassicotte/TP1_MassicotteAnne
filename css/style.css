@@ -14,6 +14,19 @@ h3, h2, h1 {
   box-sizing: border-box;
 }
 
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -76,8 +89,8 @@ img {
   color: #18195e;
 }
 .button--white:hover {
-  background-color: #18195e;
-  color: #ffffff;
+  background-color: #a1d18a;
+  color: #18195e;
   transition: all 0.2s;
 }
 
@@ -112,8 +125,11 @@ button:hover {
   }
 }
 .navbar {
-  background-color: #14aeb1;
+  background-color: #00787a;
   padding: 2rem 0;
+}
+.navbar a:focus {
+  outline: 3px solid #a1d18a;
 }
 .navbar .container {
   display: flex;
@@ -136,7 +152,7 @@ button:hover {
   transition: all 0.2s;
 }
 .navbar__list-item a:hover {
-  color: #18195e;
+  color: #a1d18a;
   transition: all 0.2s;
 }
 @media screen and (min-width: 1080px) {
@@ -216,6 +232,9 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+.row-newsletter input:focus, .row-newsletter button:focus {
+  outline: 3px solid #00aaad;
+}
 .row-newsletter__text {
   font-size: 1.6rem;
   padding: 0 18rem;
@@ -240,9 +259,6 @@ button:hover {
   width: 100%;
   padding: 0.8rem 1rem;
   border: 2px solid #18195e;
-}
-.row-newsletter__field-wrapper input:focus {
-  border: 2px solid #14aeb1;
 }
 @media screen and (max-width: 1200px) {
   .row-newsletter__text {
@@ -284,6 +300,9 @@ button:hover {
   }
 }
 
+.row-cta a:focus {
+  outline: 3px solid #00aaad;
+}
 .row-cta__container {
   display: flex;
   justify-content: center;
@@ -325,7 +344,7 @@ button:hover {
 
 /* Cards - Éléments de mission */
 .row-mission {
-  background-color: #14aeb1;
+  background-color: #00787a;
   color: #ffffff;
 }
 .row-mission h2 {
@@ -351,12 +370,15 @@ button:hover {
   margin-bottom: 0;
   color: #ffffff;
 }
+.row-cards a:focus {
+  outline: 3px solid #a1d18a;
+}
 .row-cards__item {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  background-color: #14aeb1;
+  background-color: #00787a;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   flex-basis: calc(33.3333333333% - 2rem);
 }
@@ -365,6 +387,9 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 1.3333333333rem;
+}
+.row-cards__animal-info p {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1250px) {
@@ -588,6 +613,9 @@ button:hover {
   align-items: center;
   gap: 4rem;
 }
+.row-statistics a:focus {
+  outline: 3px solid #00aaad;
+}
 .row-statistics__image {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
@@ -649,6 +677,12 @@ button:hover {
   }
 }
 
+.row-form button:focus, .row-form input:focus,
+.row-form textarea:focus,
+.row-form select:focus {
+  outline: 3px solid #00aaad;
+}
+
 .row-form {
   position: relative;
 }
@@ -702,11 +736,6 @@ button:hover {
   padding: 0.5rem;
   border: 2px solid #18195e;
 }
-.row-form input:focus,
-.row-form textarea:focus,
-.row-form select:focus {
-  border-color: #14aeb1;
-}
 .row-form select,
 .row-form textarea {
   font-family: "Raleway", sans-serif;
@@ -752,6 +781,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+}
+.row-footer a:focus {
+  outline: 3px solid #a1d18a;
 }
 .row-footer__logo {
   width: 350px;

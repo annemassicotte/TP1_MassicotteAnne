@@ -1,4 +1,11 @@
 .row-cta {
+
+	a{
+		&:focus{
+			@include focus($color: lighten($teal, 10%));
+		}
+	}
+
 	&__container {
 		@include flexProperties(null, center, center, null, $small-space);
 	}

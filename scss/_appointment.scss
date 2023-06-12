@@ -1,3 +1,9 @@
+%focus{
+	&:focus {
+		@include focus($color: lighten($teal, 10%));
+	}
+}
+
 .row-form {
 	position: relative;
 
@@ -54,10 +60,7 @@
 		width: 100%;
 		padding: calc($small-space/4);
 		@include border($width: 2px, $color: $navy);
-
-		&:focus {
-			border-color: $teal;
-		}
+		@extend %focus;
 	}
 
 	select,
@@ -66,36 +69,35 @@
 		font-size: $font-size-p;
 	}
 
-	button{
-		margin-top:calc($small-space/2);
+	button {
+		margin-top: calc($small-space/2);
+		@extend %focus;
 	}
 
 	@media screen and (max-width: 1280px) {
 		&__box {
-			width:75%;
+			width: 75%;
 			margin: 0 auto;
 		}
 	}
 
 	@media screen and (max-width: 900px) {
 		&__box {
-			width:90%;
+			width: 90%;
 		}
 	}
 
-	@media screen and (max-width:650px){
-
+	@media screen and (max-width: 650px) {
 		&__box {
-			width:100%;
+			width: 100%;
 		}
 
 		&__two-fields-wrapper {
 			@include flexProperties(column, null, null, null, calc($small-space/2));
-	
+
 			.row-form__input-label-wrapper {
 				width: 100%;
 			}
 		}
-	
 	}
 }

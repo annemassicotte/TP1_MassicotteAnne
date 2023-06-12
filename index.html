@@ -15,13 +15,16 @@
 	</head>
 
 	<body>
+		<a class="screen-reader-text" href="#main">Aller au contenu principal</a>
 		<header class="navbar">
 			<div class="container">
-				<img
-					class="navbar__logo"
-					src="images/refuge_havre_animal_logo.svg"
-					alt="Refuge Le Havre animal"
-				/>
+				<a href="index.html"
+					><img
+						class="navbar__logo"
+						src="images/refuge_havre_animal_logo_blanc.svg"
+						alt="Refuge Le Havre animal"
+				/></a>
+
 				<nav>
 					<ul class="navbar__list">
 						<li class="navbar__list-item">
@@ -46,7 +49,7 @@
 			</div>
 		</header>
 
-		<main>
+		<main id="main">
 			<section class="row-slider">
 				<div class="container">
 					<h1>Refuge Havre animal</h1>
@@ -59,18 +62,18 @@
 						<img
 							class="row-slider__image"
 							src="images/chat_endormi.jpg"
-							alt="Suivant"
+							alt="Chat endormi"
 						/>
 						<img
 							class="row-slider__fleches"
 							src="images/fleche-droite.svg"
-							alt="Précédent"
+							alt="Suivant"
 						/>
 					</div>
 					<div class="row-slider__dot-navigation">
-						<img src="images/point-navigation.svg" alt="Point de navigation" />
-						<img src="images/point-navigation.svg" alt="Point de navigation" />
-						<img src="images/point-navigation.svg" alt="Point de navigation" />
+						<img src="images/point-navigation.svg" alt="Image 1" />
+						<img src="images/point-navigation.svg" alt="Image 2" />
+						<img src="images/point-navigation.svg" alt="Image 3" />
 					</div>
 				</div>
 			</section>
@@ -140,7 +143,7 @@
 							<div class="row-mission__image">
 								<img
 									src="images/soigner.png"
-									alt="Protéger"
+									alt="Soigner"
 									class="row-mission__icon"
 								/>
 							</div>
@@ -306,6 +309,7 @@
 						allowfullscreen=""
 						loading="lazy"
 						referrerpolicy="no-referrer-when-downgrade"
+						tabindex="-1"
 					>
 					</iframe>
 				</div>

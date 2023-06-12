@@ -10,6 +10,12 @@
 		@include flexProperties(column, null, null, null, $medium-space);
 	}
 
+	a {
+		&:focus{
+			@include focus($color: $green);
+		}
+	}
+
 	&__logo {
 		width: 350px;
 		margin: 0 auto;

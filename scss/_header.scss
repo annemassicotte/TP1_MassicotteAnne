@@ -2,6 +2,12 @@
 	background-color: $teal;
 	padding: $small-space 0;
 
+	a{
+		&:focus{
+			@include focus($color: $green);
+		}
+	}
+
 	.container {
 		@include flexProperties(null, space-between, center, null, null);
 	}
@@ -23,7 +29,7 @@
 			transition: all 0.2s;
 
 			&:hover {
-				color: $navy;
+				color: $green;
 				transition: all 0.2s;
 			}
 		}

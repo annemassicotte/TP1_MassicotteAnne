@@ -19,4 +19,8 @@
     border: $width $style $color;
 }
 
+@mixin focus($width: 3px, $style:solid, $color){
+    outline: $width $style $color;
+}
+
 
