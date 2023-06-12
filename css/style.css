@@ -155,12 +155,17 @@ button:hover {
   color: #a1d18a;
   transition: all 0.2s;
 }
-@media screen and (min-width: 1080px) {
+.navbar__list-item a::before {
+  font-family: FontAwesome;
+  content: "\f1b0";
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 1200px) {
   .navbar__mobile-menu {
     display: none;
   }
 }
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 1199px) {
   .navbar__logo {
     width: 225px;
   }

@@ -32,16 +32,22 @@
 				color: $green;
 				transition: all 0.2s;
 			}
+
+			&::before{
+				font-family: FontAwesome;
+				content:"\f1b0";
+				margin-right: calc($small-space / 4);
+			}
 		}
 	}
 
-	@media screen and (min-width: 1080px) {
+	@media screen and (min-width: 1200px) {
 		&__mobile-menu {
 			display: none;
 		}
 	}
 
-	@media screen and (max-width: 1079px) {
+	@media screen and (max-width: 1199px) {
 
 		&__logo {
 			width: 225px;
