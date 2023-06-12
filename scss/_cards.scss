@@ -86,7 +86,7 @@
 	&__animal-info {
 		@include flexProperties(
 			column,
-			null,
+			space-between,
 			flex-start,
 			null,
 			calc($small-space/1.5)
@@ -95,6 +95,8 @@
 		p {
 			color: $white;
 		}
+
+		height:100%;
 	}
 }
 
