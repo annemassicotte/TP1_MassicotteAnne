@@ -1,9 +1,6 @@
 .row-cta {
 	&__container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 2rem;
+		@include flexProperties(null, center, center, null, $small-space);
 	}
 
 	&__text {

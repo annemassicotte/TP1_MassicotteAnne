@@ -1,27 +1,27 @@
+%flex-basis{
+	flex-basis: calc(100% / 3);
+}
+
 .row-footer {
+	background-color: $navy;
+	padding-bottom: calc($large-space/2);
 
-    background-color: $navy;
-    padding-bottom:$large-space/2;
-
-    .container{
-        display:flex;
-        flex-direction:column;
-        gap:$medium-space;
-    }
+	.container {
+		@include flexProperties(column, null, null, null, $medium-space);
+	}
 
 	&__logo {
 		width: 350px;
-        margin: 0 auto;
+		margin: 0 auto;
 	}
 
-    &__menu{
-        display:flex;
-        justify-content: center;
-    }
+	&__menu {
+		@include flexProperties(null, center, null, null, null);
+	}
 
 	&__menu-item {
 		display: inline-block;
-		margin-left: 2rem;
+		margin-left: $small-space;
 
 		a {
 			display: inline-block;
@@ -38,53 +38,43 @@
 		}
 	}
 
-    hr{
-        width:100%;
-    }
+	hr {
+		width: 100%;
+	}
 
-    p{
-        color:$white;
-        flex-basis:calc(100%/3);
-    }
+	p {
+		color: $white;
+		flex-basis: calc(100% / 3);
+	}
 
-    a{
-        color:$white;
-        text-decoration: none;
+	a {
+		color: $white;
+		text-decoration: none;
 
-        &:hover{
-            color:$green;
-        }
-    }
+		&:hover {
+			color: $green;
+		}
+	}
 
-    &__wrapper{
-        display:flex;
-        justify-content:space-between;
-    }
+	&__wrapper {
+		@include flexProperties(null, space-between, null, null, null);
+	}
 
-    &__wrapper-socials{
-        display:flex;
-        align-items:center;
-        gap:1rem;
-        flex-basis:calc(100%/3);
-        justify-content: center;
-    }
+	&__wrapper-socials {
+		@include flexProperties(null, center, center, null, calc($small-space/2));
+		@extend %flex-basis;
+	}
 
-    &__wrapper-contact{
-        display:flex;
-        align-items:center;
-        gap:2rem;
-        flex-basis:calc(100%/3);
-        justify-content: flex-end;
-    }
+	&__wrapper-contact {
+		@include flexProperties(null, flex-end, center, null, $small-space);
+		@extend %flex-basis;
+	}
 
-    &__wrapper-icon-link{
-        display:flex;
-        gap:0.5rem;
-        align-items:center;
-    }
+	&__wrapper-icon-link {
+		@include flexProperties(null, null, center, null, calc($small-space/4));
+	}
 
-    &__icon{
-        width:25px;
-    }
-
+	&__icon {
+		width: 25px;
+	}
 }

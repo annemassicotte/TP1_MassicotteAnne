@@ -7,9 +7,7 @@
 	}
 
 	.container {
-		display: flex;
-		align-items: center;
-		gap: $medium-space;
+		@include flexProperties(null, null, center, null, $medium-space);
 	}
 
 	&__image {
@@ -17,15 +15,11 @@
 	}
 
 	&__column {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: $small-space;
+		@include flexProperties(column, null, flex-start, null, $small-space);
 	}
 
 	&__results {
-		display: flex;
-		gap: $small-space;
+		@include flexProperties(null, null, null, null, $small-space);
 	}
 
 	&__number {

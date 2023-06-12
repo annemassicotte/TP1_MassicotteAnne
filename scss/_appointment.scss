@@ -24,14 +24,11 @@
 	}
 
 	&__fields-wrapper {
-		display: flex;
-		flex-direction: column;
-		gap: $small-space/2;
+		@include flexProperties(column, null, null, null, calc($small-space/2));
 	}
 
 	&__two-fields-wrapper {
-		display: flex;
-		gap: 1rem;
+		@include flexProperties(null, null, null, null, calc($small-space/2));
 
 		.row-form__input-label-wrapper {
 			width: 50%;
@@ -39,9 +36,7 @@
 	}
 
 	&__input-label-wrapper {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
+		@include flexProperties(column, null, null, null, calc($small-space/4));
 	}
 
 	.row-form__label {
@@ -57,11 +52,11 @@
 	textarea,
 	select {
 		width: 100%;
-		padding: $small-space/4;
-		border: 2px solid $navy;
+		padding: calc($small-space/4);
+		@include border($width: 2px, $color: $navy);
 
 		&:focus {
-			border: 2px solid $teal;
+			border-color: $teal;
 		}
 	}
 

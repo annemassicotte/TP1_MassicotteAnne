@@ -3,8 +3,7 @@
 	padding: $small-space 0;
 
 	.container {
-		display: flex;
-		justify-content: space-between;
+		@include flexProperties(null, space-between, null, null, null);
 	}
 
 	&__logo {
@@ -13,7 +12,7 @@
 
 	&__list-item {
 		display: inline-block;
-		margin-left: 2rem;
+		margin-left: $small-space;
 
 		a {
 			display: inline-block;

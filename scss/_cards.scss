@@ -1,3 +1,11 @@
+%flex {
+	@include flexProperties(null, null, null, null, $small-space);
+}
+
+%border-card {
+	@include border($color: $white);
+}
+
 /* Cards - Éléments de mission */
 
 .row-mission {
@@ -16,13 +24,12 @@
 	}
 
 	&__wrapper {
-		display: flex;
-		gap: 2rem;
+		@extend %flex;
 	}
 
 	&__item {
+		@extend %border-card;
 		padding: $small-space;
-		border: 2px solid $white;
 		width: 100%;
 		text-align: center;
 		box-shadow: $shadow-img;
@@ -30,7 +37,7 @@
 
 	&__image {
 		width: 80px;
-		margin: 0 auto $small-space/2 auto;
+		margin: 0 auto calc($small-space/2) auto;
 	}
 }
 
@@ -53,14 +60,11 @@
 	}
 
 	&__wrapper {
-		display: flex;
-		gap: $small-space;
+		@extend %flex;
 	}
 
 	&__item {
-		display: flex;
-		flex-direction: column;
-		gap: $small-space;
+		@include flexProperties(column, null, null, null, $small-space);
 		padding: $small-space;
 		background-color: $teal;
 		width: 100%;
@@ -68,13 +72,16 @@
 	}
 
 	&__image {
-		border: 3px solid $white;
+		@extend %border-card;
 	}
 
 	&__animal-info {
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
-		gap: $small-space/1.5;
+		@include flexProperties(
+			column,
+			null,
+			flex-start,
+			null,
+			calc($small-space/1.5)
+		);
 	}
 }

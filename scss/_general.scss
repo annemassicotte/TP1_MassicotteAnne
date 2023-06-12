@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Raleway:wght@400;500&display=swap");
-
+%font-margin-headings{
+	font-family: $font-heading;
+	margin-top: 0;
+	margin-bottom: $small-space;
+}
 
 * {
 	box-sizing: border-box;
@@ -31,23 +34,17 @@ input {
 
 h1 {
 	font-size: $font-size-h1;
-	font-family: $font-heading;
-	margin-top: 0;
-	margin-bottom: $small-space;
+	@extend %font-margin-headings;
 }
 
 h2 {
 	font-size: $font-size-h2;
-	font-family: $font-heading;
-	margin-top: 0;
-	margin-bottom: $small-space;
+	@extend %font-margin-headings;
 }
 
 h3 {
 	font-size: $font-size-h3;
-	font-family: $font-heading;
-	margin-top: 0;
-	margin-bottom: calc($small-space/2);
+	@extend %font-margin-headings;
 }
 
 img {
@@ -60,7 +57,7 @@ img {
 	border: none;
 	box-shadow: $shadow-btn;
 	transition: all 0.2s;
-	padding: 0.8rem 1.5rem;
+	padding: calc($small-space/2) $small-space;
 	text-decoration: none;
 	font-weight: 500;
 

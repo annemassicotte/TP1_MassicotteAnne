@@ -2,9 +2,7 @@
 	background-color: $green;
 
 	.container {
-		display: flex;
-		justify-content: center;
-		text-align: center;
+		@include flexProperties(null, center, center, null, null);
 	}
 
 	&__text {
@@ -14,10 +12,7 @@
 	}
 
 	&__fields {
-		display: flex;
-		justify-content: center;
-		align-items: baseline;
-		gap: 1rem;
+		@include flexProperties(null, center, baseline, null, calc($small-space/2));
 		width: 50%;
 		margin: 0 auto;
 	}
@@ -31,11 +26,11 @@
 
 		input {
 			width: 100%;
-			padding: 0.8rem 1rem;
-			border: 2px solid $navy;
+			padding: 0.8rem calc($small-space/2);
+			@include border($width: 2px, $color: $navy);
 
 			&:focus {
-				border: 2px solid $teal;
+				@include border($width: 2px, $color: $teal);
 			}
 		}
 	}
