@@ -35,4 +35,47 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 1200px) {
+		&__text {
+			padding: 0 $large-space * 2;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		&__fields {
+			width: 60%;
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		&__text {
+			padding: 0 $large-space;
+		}
+
+		&__fields {
+			width: 70%;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		&__text {
+			padding: 0 $large-space/2;
+		}
+
+		&__field-wrapper {
+			width:80%;
+		}
+
+		&__fields {
+			@include flexProperties(column, null, center, null, calc($small-space));
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		&__text {
+			padding: 0 $large-space/4;
+		}
+	}
 }

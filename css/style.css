@@ -223,6 +223,44 @@ button:hover {
 .row-newsletter__field-wrapper input:focus {
   border: 2px solid #14aeb1;
 }
+@media screen and (max-width: 1200px) {
+  .row-newsletter__text {
+    padding: 0 12rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .row-newsletter__fields {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .row-newsletter__text {
+    padding: 0 6rem;
+  }
+  .row-newsletter__fields {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row-newsletter__text {
+    padding: 0 3rem;
+  }
+  .row-newsletter__field-wrapper {
+    width: 80%;
+  }
+  .row-newsletter__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row-newsletter__text {
+    padding: 0 1.5rem;
+  }
+}
 
 .row-cta__container {
   display: flex;
