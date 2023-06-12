@@ -3,7 +3,7 @@
 	padding: $small-space 0;
 
 	.container {
-		@include flexProperties(null, space-between, null, null, null);
+		@include flexProperties(null, space-between, center, null, null);
 	}
 
 	&__logo {
@@ -26,6 +26,27 @@
 				color: $navy;
 				transition: all 0.2s;
 			}
+		}
+	}
+
+	@media screen and (min-width: 1080px) {
+		&__mobile-menu {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 1079px) {
+
+		&__logo {
+			width: 200px;
+		}
+		
+		&__list{
+			display:none;
+		}
+
+		&__mobile-menu {
+			width:30px;
 		}
 	}
 }

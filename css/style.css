@@ -97,6 +97,7 @@ button:hover {
 .navbar .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar__logo {
   width: 250px;
@@ -116,6 +117,22 @@ button:hover {
 .navbar__list-item a:hover {
   color: #18195e;
   transition: all 0.2s;
+}
+@media screen and (min-width: 1080px) {
+  .navbar__mobile-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .navbar__logo {
+    width: 200px;
+  }
+  .navbar__list {
+    display: none;
+  }
+  .navbar__mobile-menu {
+    width: 30px;
+  }
 }
 
 .row-slider {
