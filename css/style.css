@@ -125,12 +125,27 @@ button:hover {
 .row-slider h1 {
   display: none;
 }
-.row-slider__image {
+.row-slider__image-container {
   width: 70%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
 }
-.row-slider__image img {
+.row-slider__image {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+.row-slider__fleches {
+  width: 40px;
+}
+.row-slider__dot-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.row-slider__dot-navigation img {
+  width: 15px;
 }
 
 .row-newsletter {
@@ -145,6 +160,7 @@ button:hover {
   font-size: 1.6rem;
   padding: 0 18rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .row-newsletter__fields {
   display: flex;
