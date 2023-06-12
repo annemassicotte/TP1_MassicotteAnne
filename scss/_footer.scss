@@ -1,4 +1,4 @@
-%flex-basis{
+%flex-basis {
 	flex-basis: calc(100% / 3);
 }
 
@@ -16,7 +16,13 @@
 	}
 
 	&__menu {
-		@include flexProperties(null, center, null, null, null);
+		@include flexProperties(null, center, null, wrap, null);
+		padding-inline-start: 0;
+		row-gap: calc($small-space/2);
+
+		li:first-child {
+			margin-left: 0;
+		}
 	}
 
 	&__menu-item {
@@ -57,7 +63,7 @@
 	}
 
 	&__wrapper {
-		@include flexProperties(null, space-between, null, null, null);
+		@include flexProperties(null, null, center, null, null);
 	}
 
 	&__wrapper-socials {
@@ -76,5 +82,29 @@
 
 	&__icon {
 		width: 25px;
+	}
+
+	@media screen and (max-width: 1280px) {
+		&__logo {
+			width: 300px;
+			margin: 0 auto;
+		}
+
+		&__wrapper {
+			@include flexProperties(column, null, null, null, $small-space);
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		&__menu {
+			padding-inline-start: 0;
+			row-gap: calc($small-space/2);
+		}
+		
+		&__menu-item {
+			margin-left: 0;
+			flex-basis:50%;
+			text-align:center;
+		}
 	}
 }

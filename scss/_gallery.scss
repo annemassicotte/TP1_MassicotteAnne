@@ -54,7 +54,7 @@
 	);
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	#img-1 {
 		@include gridDisposition(
 			$column: 1 / span 4,
@@ -104,7 +104,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	#img-1 {
 		@include gridDisposition(
 			$column: 1 / span 1,

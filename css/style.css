@@ -460,7 +460,7 @@ button:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #img-1 {
     grid-column: 1/span 4;
     grid-row: 1/span 3;
@@ -504,7 +504,7 @@ button:hover {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #img-1 {
     grid-column: 1/span 1;
     grid-row: 1/span 1;
@@ -670,6 +670,33 @@ button:hover {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
 }
+.row-form button {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1280px) {
+  .row-form__box {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .row-form__box {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .row-form__box {
+    width: 100%;
+  }
+  .row-form__two-fields-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .row-form__two-fields-wrapper .row-form__input-label-wrapper {
+    width: 100%;
+  }
+}
 
 .row-footer__wrapper-contact, .row-footer__wrapper-socials {
   flex-basis: 33.3333333333%;
@@ -691,6 +718,12 @@ button:hover {
 .row-footer__menu {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  row-gap: 1rem;
+}
+.row-footer__menu li:first-child {
+  margin-left: 0;
 }
 .row-footer__menu-item {
   display: inline-block;
@@ -724,7 +757,7 @@ button:hover {
 }
 .row-footer__wrapper {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 .row-footer__wrapper-socials {
   display: flex;
@@ -745,6 +778,28 @@ button:hover {
 }
 .row-footer__icon {
   width: 25px;
+}
+@media screen and (max-width: 1280px) {
+  .row-footer__logo {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .row-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row-footer__menu {
+    padding-inline-start: 0;
+    row-gap: 1rem;
+  }
+  .row-footer__menu-item {
+    margin-left: 0;
+    flex-basis: 50%;
+    text-align: center;
+  }
 }
 
 .input-control.success input, .input-control.success select {
