@@ -11,7 +11,7 @@
 	}
 
 	a {
-		&:focus{
+		&:focus {
 			@include focus($color: $green);
 		}
 	}
@@ -103,13 +103,7 @@
 
 	@media screen and (max-width: 768px) {
 		.container {
-			@include flexProperties(
-				column,
-				null,
-				null,
-				null,
-				calc($medium-space/1.5)
-			);
+			@include flexProperties(null, null, null, null, calc($medium-space/1.5));
 		}
 
 		&__menu {

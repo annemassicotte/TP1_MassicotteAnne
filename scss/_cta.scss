@@ -1,7 +1,6 @@
 .row-cta {
-
-	a{
-		&:focus{
+	a {
+		&:focus {
 			@include focus($color: lighten($teal, 10%));
 		}
 	}
@@ -15,9 +14,9 @@
 		font-family: $font-heading;
 	}
 
-	@media screen and (max-width:768px){
+	@media screen and (max-width: 768px) {
 		&__container {
-			@include flexProperties(column, null, center, null, $small-space);
+			@include flexProperties(column, null, null, null, null);
 		}
 
 		&__text {

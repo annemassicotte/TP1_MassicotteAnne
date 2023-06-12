@@ -20,7 +20,7 @@
 	}
 
 	&__fields {
-		@include flexProperties(null, center, baseline, null, calc($small-space));
+		@include flexProperties(null, center, baseline, null, $small-space);
 		width: 50%;
 		margin: 0 auto;
 	}
@@ -72,7 +72,7 @@
 		}
 
 		&__fields {
-			@include flexProperties(column, null, center, null, calc($small-space));
+			@include flexProperties(column, null, center, null, null);
 			width: 100%;
 		}
 	}

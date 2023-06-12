@@ -2,8 +2,8 @@
 	background-color: $teal;
 	padding: $small-space 0;
 
-	a{
-		&:focus{
+	a {
+		&:focus {
 			@include focus($color: $green);
 		}
 	}
@@ -33,9 +33,9 @@
 				transition: all 0.2s;
 			}
 
-			&::before{
+			&::before {
 				font-family: FontAwesome;
-				content:"\f1b0";
+				content: "\f1b0";
 				margin-right: calc($small-space / 4);
 			}
 		}
@@ -48,17 +48,16 @@
 	}
 
 	@media screen and (max-width: 1199px) {
-
 		&__logo {
 			width: 225px;
 		}
-		
-		&__list{
-			display:none;
+
+		&__list {
+			display: none;
 		}
 
 		&__mobile-menu {
-			width:30px;
+			width: 30px;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-%focus{
+%focus {
 	&:focus {
 		@include focus($color: lighten($teal, 10%));
 	}
@@ -16,9 +16,9 @@
 		z-index: -1;
 	}
 
-	iframe{
-		width:100%;
-		height:100%;
+	iframe {
+		width: 100%;
+		height: 100%;
 	}
 
 	&__box {
@@ -98,7 +98,7 @@
 		}
 
 		&__two-fields-wrapper {
-			@include flexProperties(column, null, null, null, calc($small-space/2));
+			@include flexProperties(column, null, null, null, null);
 
 			.row-form__input-label-wrapper {
 				width: 100%;

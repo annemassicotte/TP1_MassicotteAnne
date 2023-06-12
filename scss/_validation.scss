@@ -1,12 +1,14 @@
 .input-control {
 	&.success {
-		input, select {
+		input,
+		select {
 			border-color: $greenValidationForm;
 		}
 	}
 
 	&.error {
-		input, select {
+		input,
+		select {
 			border-color: $redValidationForm;
 		}
 	}
@@ -16,6 +18,6 @@
 		font-family: $font-text;
 		text-align: left;
 		margin-top: 0.25rem;
-		color:$redValidationForm;
+		color: $redValidationForm;
 	}
 }

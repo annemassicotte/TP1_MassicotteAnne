@@ -1,4 +1,4 @@
-%font-margin-headings{
+%font-margin-headings {
 	font-family: $font-heading;
 	margin-top: 0;
 	margin-bottom: $small-space;
@@ -8,16 +8,16 @@
 	box-sizing: border-box;
 }
 
-.screen-reader-text{
-	border:0;
-	clip:rect(1px, 1px, 1px, 1px);
-	clip-path:inset(50%);
-	height:1px;
-	margin:-1px;
-	overflow:hidden;
-	padding:0;
-	position:absolute;
-	width:1px;
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 	word-wrap: normal !important;
 }
 
@@ -58,6 +58,10 @@ h2 {
 h3 {
 	font-size: $font-size-h3;
 	@extend %font-margin-headings;
+}
+
+p {
+	line-height: 1.5;
 }
 
 img {
@@ -106,27 +110,27 @@ button {
 	}
 }
 
-@media (max-width:1024px){
+@media (max-width: 1024px) {
 	section {
 		padding: calc($large-space / 1.5) 0;
 	}
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 	h1 {
 		font-size: $font-size-h1-mobile;
 	}
-	
+
 	h2 {
 		font-size: $font-size-h2-mobile;
 	}
-	
+
 	h3 {
 		font-size: $font-size-h3-mobile;
 	}
 }
 
-@media (max-width:600px){
+@media (max-width: 600px) {
 	section {
 		padding: calc($large-space / 2) 0;
 	}

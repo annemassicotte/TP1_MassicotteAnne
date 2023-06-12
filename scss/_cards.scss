@@ -2,7 +2,7 @@
 	@include flexProperties(null, center, null, wrap, $small-space);
 }
 
-%border-card {
+%border {
 	@include border($color: $white);
 }
 
@@ -10,6 +10,12 @@
 	padding: 0 $large-space * 3;
 	text-align: center;
 	margin-bottom: $medium-space;
+}
+
+%style-card {
+	padding: $small-space;
+	box-shadow: $shadow-img;
+	flex-basis: calc((100% / 3) - $small-space);
 }
 
 /* Cards - Éléments de mission */
@@ -32,11 +38,9 @@
 	}
 
 	&__item {
-		@extend %border-card;
-		padding: $small-space;
+		@extend %border;
+		@extend %style-card;
 		text-align: center;
-		box-shadow: $shadow-img;
-		flex-basis: calc((100% / 3) - $small-space);
 	}
 
 	&__image {
@@ -73,17 +77,16 @@
 
 	&__item {
 		@include flexProperties(column, null, null, null, $small-space);
-		padding: $small-space;
+		@extend %style-card;
 		background-color: $teal;
-		box-shadow: $shadow-img;
-		flex-basis: calc((100% / 3) - $small-space);
 	}
 
 	&__image {
-		@extend %border-card;
+		@extend %border;
 	}
 
 	&__animal-info {
+		height: 100%;
 		@include flexProperties(
 			column,
 			space-between,
@@ -95,8 +98,6 @@
 		p {
 			color: $white;
 		}
-
-		height:100%;
 	}
 }
 
@@ -183,7 +184,7 @@
 		}
 
 		&__item {
-			@include flexProperties(column, null, center, null, $small-space);
+			@include flexProperties(column, null, null, null, null);
 		}
 
 		&__image {

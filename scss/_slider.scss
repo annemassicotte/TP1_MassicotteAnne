@@ -32,7 +32,7 @@
 	@media screen and (max-width: 768px) {
 		&__image-container {
 			width: 75%;
-			@include flexProperties(null, center, null, null, calc($small-space));
+			@include flexProperties(null, null, null, null, $small-space);
 		}
 
 		&__fleches {
@@ -40,7 +40,6 @@
 		}
 
 		&__dot-navigation {
-
 			img {
 				width: 10px;
 			}
@@ -53,7 +52,7 @@
 		}
 
 		&__fleches {
-			display:none;
+			display: none;
 		}
 	}
 }
