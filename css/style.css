@@ -164,6 +164,28 @@ button:hover {
 .row-slider__dot-navigation img {
   width: 15px;
 }
+@media screen and (max-width: 768px) {
+  .row-slider__image-container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .row-slider__fleches {
+    width: 30px;
+  }
+  .row-slider__dot-navigation img {
+    width: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row-slider__image-container {
+    width: 100%;
+  }
+  .row-slider__fleches {
+    display: none;
+  }
+}
 
 .row-newsletter {
   background-color: #a1d18a;
