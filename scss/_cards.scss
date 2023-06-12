@@ -1,9 +1,15 @@
 %flex {
-	@include flexProperties(null, null, null, null, $small-space);
+	@include flexProperties(null, center, null, wrap, $small-space);
 }
 
 %border-card {
 	@include border($color: $white);
+}
+
+%text {
+	padding: 0 $large-space * 3;
+	text-align: center;
+	margin-bottom: $medium-space;
 }
 
 /* Cards - Éléments de mission */
@@ -18,9 +24,7 @@
 	}
 
 	&__text {
-		padding: 0 $large-space * 3;
-		text-align: center;
-		margin-bottom: $medium-space;
+		@extend %text;
 	}
 
 	&__wrapper {
@@ -30,9 +34,9 @@
 	&__item {
 		@extend %border-card;
 		padding: $small-space;
-		width: 100%;
 		text-align: center;
 		box-shadow: $shadow-img;
+		flex-basis: calc((100% / 3) - $small-space);
 	}
 
 	&__image {
@@ -54,9 +58,7 @@
 	}
 
 	&__intro-text {
-		padding: 0 $large-space * 3;
-		text-align: center;
-		margin-bottom: $medium-space;
+		@extend %text;
 	}
 
 	&__wrapper {
@@ -67,8 +69,8 @@
 		@include flexProperties(column, null, null, null, $small-space);
 		padding: $small-space;
 		background-color: $teal;
-		width: 100%;
 		box-shadow: $shadow-img;
+		flex-basis: calc((100% / 3) - $small-space);
 	}
 
 	&__image {
@@ -83,5 +85,93 @@
 			null,
 			calc($small-space/1.5)
 		);
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.row-mission {
+		&__text {
+			padding: 0 $large-space * 2;
+		}
+	}
+
+	.row-cards {
+		&__intro-text {
+			padding: 0 $large-space * 2;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.row-mission {
+		&__text {
+			padding: 0 $large-space;
+		}
+
+		&__item {
+			flex-basis: calc((100% / 2) - $small-space);
+		}
+	}
+
+	.row-cards {
+		&__intro-text {
+			padding: 0 $large-space;
+		}
+
+		&__wrapper {
+			@include flexProperties(column, null, null, wrap, $small-space);
+		}
+
+		&__item {
+			@include flexProperties(row, null, center, null, $small-space);
+		}
+
+		&__image {
+			width: 40%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.row-mission {
+		&__item {
+			flex-basis: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.row-mission {
+		&__text {
+			padding: 0 $large-space/2;
+		}
+	}
+
+	.row-cards {
+		&__intro-text {
+			padding: 0 $large-space/2;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.row-mission {
+		&__text {
+			padding: 0 $large-space/4;
+		}
+	}
+
+	.row-cards {
+		&__intro-text {
+			padding: 0 $large-space/4;
+		}
+
+		&__item {
+			@include flexProperties(column, null, center, null, $small-space);
+		}
+
+		&__image {
+			width: 100%;
+		}
 	}
 }

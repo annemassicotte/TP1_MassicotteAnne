@@ -283,11 +283,19 @@ button:hover {
 
 .row-cards__wrapper, .row-mission__wrapper {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
 .row-cards__image, .row-mission__item {
   border: 3px solid #ffffff;
+}
+
+.row-cards__intro-text, .row-mission__text {
+  padding: 0 18rem;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 /* Cards - Éléments de mission */
@@ -299,16 +307,11 @@ button:hover {
   font-size: 3rem;
   text-align: center;
 }
-.row-mission__text {
-  padding: 0 18rem;
-  text-align: center;
-  margin-bottom: 4rem;
-}
 .row-mission__item {
   padding: 2rem;
-  width: 100%;
   text-align: center;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  flex-basis: calc(33.3333333333% - 2rem);
 }
 .row-mission__image {
   width: 80px;
@@ -323,19 +326,14 @@ button:hover {
   margin-bottom: 0;
   color: #ffffff;
 }
-.row-cards__intro-text {
-  padding: 0 18rem;
-  text-align: center;
-  margin-bottom: 4rem;
-}
 .row-cards__item {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
   background-color: #14aeb1;
-  width: 100%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  flex-basis: calc(33.3333333333% - 2rem);
 }
 .row-cards__animal-info {
   display: flex;
@@ -344,6 +342,70 @@ button:hover {
   gap: 1.3333333333rem;
 }
 
+@media screen and (max-width: 1250px) {
+  .row-mission__text {
+    padding: 0 12rem;
+  }
+  .row-cards__intro-text {
+    padding: 0 12rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .row-mission__text {
+    padding: 0 6rem;
+  }
+  .row-mission__item {
+    flex-basis: calc(50% - 2rem);
+  }
+  .row-cards__intro-text {
+    padding: 0 6rem;
+  }
+  .row-cards__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .row-cards__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  .row-cards__image {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row-mission__item {
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .row-mission__text {
+    padding: 0 3rem;
+  }
+  .row-cards__intro-text {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row-mission__text {
+    padding: 0 1.5rem;
+  }
+  .row-cards__intro-text {
+    padding: 0 1.5rem;
+  }
+  .row-cards__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .row-cards__image {
+    width: 100%;
+  }
+}
 .row-gallery .container {
   display: grid;
   grid-gap: 1rem;
