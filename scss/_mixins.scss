@@ -7,10 +7,9 @@
     gap: $gap;
 }
 
-@mixin gridDisposition($column, $row, $ratio, $object-fit:cover, $box-shadow:$shadow-img){
+@mixin gridDisposition($column, $row, $object-fit:cover, $box-shadow:$shadow-img){
     grid-column:$column;
     grid-row: $row;
-    aspect-ratio: $ratio;
     object-fit: $object-fit;
     box-shadow: $box-shadow;
 }
