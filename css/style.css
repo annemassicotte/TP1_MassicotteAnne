@@ -581,6 +581,31 @@ button:hover {
 .row-statistics__caption {
   font-size: 0.85rem;
 }
+@media screen and (max-width: 900px) {
+  .row-statistics .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .row-statistics__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .row-statistics__column p {
+    text-align: center;
+  }
+  .row-statistics__results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+}
 
 .row-form {
   position: relative;

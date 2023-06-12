@@ -31,4 +31,24 @@
 	&__caption {
 		font-size: $font-size-p-smaller;
 	}
+
+	@media screen and (max-width:900px){
+		.container {
+			@include flexProperties(column-reverse, center, center, null, $medium-space);
+		}
+
+		&__column {
+			@include flexProperties(column, null, center, null, $small-space);
+
+			p {
+				text-align: center;
+			}
+		}
+
+		&__results {
+			@include flexProperties(column, null, center, null, $small-space);
+			text-align:center;
+		}
+	
+	}
 }
