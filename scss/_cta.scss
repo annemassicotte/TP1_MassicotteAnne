@@ -12,5 +12,9 @@
 		&__container {
 			@include flexProperties(column, null, center, null, $small-space);
 		}
+
+		&__text {
+			font-size: $font-size-h2-mobile;
+		}
 	}
 }

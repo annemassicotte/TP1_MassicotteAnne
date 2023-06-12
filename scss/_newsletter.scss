@@ -60,6 +60,7 @@
 
 	@media screen and (max-width: 768px) {
 		&__text {
+			font-size: $font-size-h3-mobile;
 			padding: 0 $large-space/2;
 		}
 

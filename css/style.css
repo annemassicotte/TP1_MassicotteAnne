@@ -90,6 +90,27 @@ button:hover {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  section {
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    padding: 3rem 0;
+  }
+}
 .navbar {
   background-color: #14aeb1;
   padding: 2rem 0;
@@ -125,7 +146,7 @@ button:hover {
 }
 @media screen and (max-width: 1079px) {
   .navbar__logo {
-    width: 200px;
+    width: 225px;
   }
   .navbar__list {
     display: none;
@@ -243,6 +264,7 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .row-newsletter__text {
+    font-size: 1.4rem;
     padding: 0 3rem;
   }
   .row-newsletter__field-wrapper {
@@ -278,6 +300,9 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+  .row-cta__text {
+    font-size: 1.8rem;
   }
 }
 
@@ -377,6 +402,9 @@ button:hover {
   }
 }
 @media screen and (max-width: 768px) {
+  .row-mission h2 {
+    font-size: 2.8rem;
+  }
   .row-mission__item {
     flex-basis: 100%;
   }
@@ -606,6 +634,20 @@ button:hover {
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .row-statistics__number {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row-statistics .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+}
 
 .row-form {
   position: relative;
@@ -791,6 +833,11 @@ button:hover {
   }
 }
 @media screen and (max-width: 768px) {
+  .row-footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6666666667rem;
+  }
   .row-footer__menu {
     padding-inline-start: 0;
     row-gap: 1rem;

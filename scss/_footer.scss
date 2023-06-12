@@ -96,15 +96,25 @@
 	}
 
 	@media screen and (max-width: 768px) {
+		.container {
+			@include flexProperties(
+				column,
+				null,
+				null,
+				null,
+				calc($medium-space/1.5)
+			);
+		}
+
 		&__menu {
 			padding-inline-start: 0;
 			row-gap: calc($small-space/2);
 		}
-		
+
 		&__menu-item {
 			margin-left: 0;
-			flex-basis:50%;
-			text-align:center;
+			flex-basis: 50%;
+			text-align: center;
 		}
 	}
 }

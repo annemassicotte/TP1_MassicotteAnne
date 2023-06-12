@@ -92,3 +92,29 @@ button {
 		cursor: pointer;
 	}
 }
+
+@media (max-width:1024px){
+	section {
+		padding: calc($large-space / 1.5) 0;
+	}
+}
+
+@media (max-width: 768px){
+	h1 {
+		font-size: $font-size-h1-mobile;
+	}
+	
+	h2 {
+		font-size: $font-size-h2-mobile;
+	}
+	
+	h3 {
+		font-size: $font-size-h3-mobile;
+	}
+}
+
+@media (max-width:600px){
+	section {
+		padding: calc($large-space / 2) 0;
+	}
+}

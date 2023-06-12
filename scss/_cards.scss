@@ -134,6 +134,11 @@
 
 @media screen and (max-width: 768px) {
 	.row-mission {
+
+		h2 {
+			font-size: $font-size-h1-mobile;
+		}
+
 		&__item {
 			flex-basis: 100%;
 		}
