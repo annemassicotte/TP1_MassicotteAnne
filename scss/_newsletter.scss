@@ -5,8 +5,9 @@
 		@include flexProperties(null, center, center, null, null);
 	}
 
-	input, button{
-		&:focus{
+	input,
+	button {
+		&:focus {
 			@include focus($color: lighten($teal, 10%));
 		}
 	}
@@ -63,11 +64,11 @@
 	@media screen and (max-width: 768px) {
 		&__text {
 			font-size: $font-size-h3-mobile;
-			padding: 0 $large-space/2;
+			padding: 0 calc($large-space / 2);
 		}
 
 		&__field-wrapper {
-			width:80%;
+			width: 80%;
 		}
 
 		&__fields {
@@ -78,7 +79,7 @@
 
 	@media screen and (max-width: 600px) {
 		&__text {
-			padding: 0 $large-space/4;
+			padding: 0 calc($large-space/4);
 		}
 	}
 }

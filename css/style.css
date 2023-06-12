@@ -237,7 +237,8 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-.row-newsletter input:focus, .row-newsletter button:focus {
+.row-newsletter input:focus,
+.row-newsletter button:focus {
   outline: 3px solid #00aaad;
 }
 .row-newsletter__text {

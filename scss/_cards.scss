@@ -58,7 +58,7 @@
 	}
 
 	a {
-		&:focus{
+		&:focus {
 			@include focus($color: $green);
 		}
 	}
@@ -93,7 +93,7 @@
 		);
 
 		p {
-			color:$white;
+			color: $white;
 		}
 	}
 }
@@ -157,13 +157,13 @@
 @media screen and (max-width: 700px) {
 	.row-mission {
 		&__text {
-			padding: 0 $large-space/2;
+			padding: 0 calc($large-space/2);
 		}
 	}
 
 	.row-cards {
 		&__intro-text {
-			padding: 0 $large-space/2;
+			padding: 0 calc($large-space/2);
 		}
 	}
 }
@@ -171,13 +171,13 @@
 @media screen and (max-width: 600px) {
 	.row-mission {
 		&__text {
-			padding: 0 $large-space/4;
+			padding: 0 calc($large-space/4);
 		}
 	}
 
 	.row-cards {
 		&__intro-text {
-			padding: 0 $large-space/4;
+			padding: 0 calc($large-space/4);
 		}
 
 		&__item {
